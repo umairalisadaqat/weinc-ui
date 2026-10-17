@@ -1,0 +1,32 @@
+export default {
+  slug: "hotel-room-cards-sliding-to-a-second-view",
+  category: "galleries",
+  name: "Hotel Room Cards Sliding To A Second View",
+  keyword: "image swap on hover css",
+  tags: ["image swap", "second image", "hover card", "hotel", "toggle button"],
+  height: 760,
+  section: true,
+  interactive: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The photos swap instantly when the button is pressed, with no sliding.",
+  perf: "Two stacked photos per card move with transform only; the idle timer stops when the section leaves the screen.",
+  intro: "Two guest-house room cards on white, each holding a second photo just outside its frame. Hovering a card pushes the room aside as the balcony or valley slides in, and a small label rolls over to name the new view. A real button on every card does the same swap for touch and keyboard users.",
+  customize: [
+    "Change `--w8rom-push` to set how far the first photo drifts while the second one arrives.",
+    "Slow or quicken the slide with `--w8rom-time`.",
+    "Edit the two label spans in each `.w8rom-chip` when the second photo shows something else.",
+  ],
+  accessibility: [
+    "The view button reports its state with aria-pressed, so the swap never depends on hovering.",
+    "Both photos carry their own alt text, and the rolling label is hidden from screen readers because the alt text already says it.",
+  ],
+  useWhen: [
+    "Listings where a second angle answers the next question, such as a room and its outlook or a product front and back.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

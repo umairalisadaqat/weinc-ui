@@ -1,0 +1,30 @@
+export default {
+  slug: "image-card-zoom-with-caption-sliding-up",
+  category: "animated-buttons",
+  name: "Image Card Zoom With Caption Sliding Up",
+  keyword: "css image hover zoom caption",
+  tags: ["image hover", "zoom effect", "caption reveal", "photo cards", "pure css"],
+  height: 720,
+  section: true,
+  collection: "hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Photos hold their size and every caption shows its name and detail line from the start.",
+  perf: "A slow scale on each photo plus a caption translate and two opacity fades, with no script at all.",
+  intro: "Tall photo cards for a set of lakeside cabins: on hover the picture eases slightly closer while the caption rises and a second line with beds and price fades in under the name. The first card rests in that state so a still preview explains itself. On phones and tablets the detail line is always shown.",
+  customize: [
+    "Set `--w3zoo-zoom` for how close the photo moves and `--w3zoo-rise` for the caption's travel.",
+    "Swap photos and lines in the `cabins` array, keeping a 3 by 4 frame so nothing shifts while loading.",
+    "Drop the `w3zoo-demo` class from the first card to start every card at rest.",
+  ],
+  accessibility: [
+    "Each photo has a real description, the detail line is always in the page for screen readers, and keyboard focus plays the same zoom and caption rise.",
+  ],
+  useWhen: [
+    "Rooms, venues, destinations or portfolio work where the picture sells and one extra line helps decide.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

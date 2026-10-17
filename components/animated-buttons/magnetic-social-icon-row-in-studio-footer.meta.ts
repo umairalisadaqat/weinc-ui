@@ -1,0 +1,32 @@
+export default {
+  slug: "magnetic-social-icon-row-in-studio-footer",
+  category: "animated-buttons",
+  name: "Magnetic Social Icon Row",
+  keyword: "magnetic social icons hover",
+  title: "",
+  description: "",
+  intro: "A follow block for a print studio on warm sand: five round outline icons, each with its name printed underneath, lean toward the mouse as it comes near and fill with terracotta when it is close. The glyph inside moves a little further than its circle, which gives the pull some depth. A pretend pointer drifts along the row until a real one arrives.",
+  useWhen: [
+    "A footer or contact block where a handful of channels deserve more than a row of tiny links.",
+    "A creative studio site that wants one tactile detail near the end of the page.",
+  ],
+  customize: [
+    "Strengthen or soften the pull with `PULL`, and the extra glyph shift with `INNER`.",
+    "Widen the area that reacts with `REACH`; keep it below the gap between icons so only one leans at a time.",
+    "Change the fill with `--w7mag-clay` and the disc size with `--w7mag-size`.",
+  ],
+  accessibility: [
+    "Every icon is a real link with a visible text label, so nothing relies on hover or on recognising a glyph.",
+    "Keyboard focus fills the disc and draws a ring around it; reduced motion keeps the fill and drops the pull.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["magnetic buttons", "social links", "icon row", "hover effect", "footer"],
+  height: 420,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Icons stay put; hover and focus still fill each disc with colour.",
+  perf: "Five small transforms per frame while visible, measured from five bounding boxes; the loop stops off screen.",
+} satisfies UiMeta;

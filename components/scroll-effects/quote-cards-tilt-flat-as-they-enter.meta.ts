@@ -1,0 +1,32 @@
+export default {
+  slug: "quote-cards-tilt-flat-as-they-enter",
+  category: "scroll-effects",
+  name: "Quote Cards Tilt Flat as They Enter",
+  keyword: "testimonial cards 3d tilt on scroll",
+  title: "",
+  description: "",
+  intro: "A column of client letters for a hand bookbinder, each on a cream card with an oxblood tab. Cards arrive leaning back as if lying on a desk and stand upright while they move into view, becoming flat and fully opaque the moment the whole card is visible. Initials stand in for photos, which suits a small trade with private clients.",
+  useWhen: [
+    "A testimonials block on a craft or service site that wants depth without carousels.",
+    "Long-form reviews that deserve to be read one at a time.",
+  ],
+  customize: [
+    "Change the starting lean with `--w7tlt-tilt` and how deep it looks with `--w7tlt-depth`.",
+    "Swap the tab and button colour with `--w7tlt-ox` and the card paper with the `#fffaf2` background.",
+    "Add or remove `li.w7tlt-card` items; spacing comes from the list's `gap`.",
+  ],
+  accessibility: [
+    "Each review is a real `blockquote` in a list item, with the name in bold text after it.",
+    "With reduced motion every card is flat and fully visible from the start.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["testimonials", "3d tilt", "rotateX", "scroll-driven animation", "quote cards"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "css",
+  support: "Chrome, Edge and Safari 26+; script fallback elsewhere",
+  reducedMotion: "All cards lie flat and fully opaque, in a plain readable column.",
+  perf: "A perspective rotate and an opacity per card, handled by the scroll timeline with no script work while scrolling.",
+} satisfies UiMeta;

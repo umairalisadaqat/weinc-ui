@@ -1,0 +1,31 @@
+export default {
+  slug: "review-card-marquee-with-pause-button",
+  category: "marquees",
+  name: "Review Card Marquee With Pause Button",
+  keyword: "testimonial marquee css",
+  tags: ["testimonials", "reviews", "marquee", "cards", "pause button"],
+  height: 550,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The cards sit still in a row that people swipe or scroll sideways, snapping to each card.",
+  perf: "A single slow transform loop over six cards; the browser composites it and the observer halts it out of view.",
+  intro: "Guest quotes for a small sea kayak outfitter travel past on cream cards with soft shadows, at a pace slow enough to read one in passing. Hovering a card or tabbing into the row stops it, and a teal outline button freezes the whole belt for anyone who wants to read every note. Fits a testimonial band on a tour, class or hospitality site.",
+  customize: [
+    "Raise `SPEED` or `--w3rev-speed` if your quotes run longer than two lines.",
+    "Change `--w3rev-card` to make every card wider or narrower.",
+    "Replace the objects in `reviews` with real guest notes, keeping name and trip short.",
+  ],
+  accessibility: [
+    "Each quote sits in a blockquote inside a list item, and the repeated half carries aria-hidden so nothing is announced twice.",
+    "The pause button announces its state with aria-pressed, which meets the need for a way to stop motion lasting over five seconds.",
+  ],
+  useWhen: [
+    "You have six or more short reviews and want them to feel like a stream rather than a grid.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

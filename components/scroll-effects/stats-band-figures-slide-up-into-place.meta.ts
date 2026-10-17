@@ -1,0 +1,32 @@
+export default {
+  slug: "stats-band-figures-slide-up-into-place",
+  category: "scroll-effects",
+  name: "Stats Band Figures Slide Up Into Place",
+  keyword: "animated stats section on scroll",
+  title: "",
+  description: "",
+  intro: "Three bands of figures for a small cycling tour company, set large in pale sand on deep navy with thin dividers. When a band scrolls into view its digits slide up out of a hidden baseline one character at a time, left to right, and each label fades in underneath. The first band is already settled when the section loads.",
+  useWhen: [
+    "A tour, course or product page where a few honest numbers explain the offer faster than a paragraph.",
+    "An about section that needs a pause between blocks of copy.",
+  ],
+  customize: [
+    "Edit the figures and labels directly in each `.w7sts-cell`; the script splits whatever digits it finds.",
+    "Slow the cascade with `--w7sts-step` (per digit) and `--w7sts-dur` (per slide) on `.w7sts`.",
+    "Change `repeat(4, 1fr)` in the wide-screen rule if a band holds three or five figures.",
+  ],
+  accessibility: [
+    "Figures and labels are a real description list, and each split figure carries its full value as an `aria-label`.",
+    "Reduced motion leaves every figure whole and visible, and the demo scroll stays off.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["stats section", "number reveal", "digit animation", "scroll reveal", "dark section"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "All three bands show their complete figures and labels with no sliding digits.",
+  perf: "Digits are split once at start; after that an observer adds one class per band and the transitions run on transforms.",
+} satisfies UiMeta;

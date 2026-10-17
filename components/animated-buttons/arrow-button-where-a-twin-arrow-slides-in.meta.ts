@@ -1,0 +1,30 @@
+export default {
+  slug: "arrow-button-where-a-twin-arrow-slides-in",
+  category: "animated-buttons",
+  name: "Arrow Button Where a Twin Arrow Slides In",
+  keyword: "arrow button hover animation css",
+  tags: ["arrow button", "call to action", "hover animation", "pure css", "link hover"],
+  height: 520,
+  section: true,
+  collection: "hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The arrows stay put, the idle loop is off, and hover simply keeps the arrow in place.",
+  perf: "Two small SVG arrows per button move by transform; the only script pauses the loop when off screen.",
+  intro: "Two navy calls to action for a sailing school, a solid pill with a round arrow chip and a plain text link, where the arrow shoots out to the right and an identical twin glides in from the left. Because both arrows match, the loop on the first button resets invisibly. It suits any forward action such as booking or reading on.",
+  customize: [
+    "Change `--w3arr-speed` for the swap and `--w3arr-loop` for the idle cycle on the first button.",
+    "Recolour with `--w3arr-navy` and `--w3arr-light`, or swap the arrow path for a chevron.",
+    "Remove the `w3arr-demo` class to turn the idle loop off.",
+  ],
+  accessibility: [
+    "Both arrows are hidden from screen readers so each link reads as its words only, and keyboard focus runs the same swap with a light outline.",
+  ],
+  useWhen: [
+    "A hero or section footer with one main next step and a quieter secondary link.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

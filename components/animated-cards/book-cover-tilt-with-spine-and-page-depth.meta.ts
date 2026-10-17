@@ -1,0 +1,31 @@
+export default {
+  slug: "book-cover-tilt-with-spine-and-page-depth",
+  category: "animated-cards",
+  name: "Book Cover Tilt With Spine and Page Depth",
+  keyword: "3d book cover hover tilt css",
+  tags: ["3d book", "tilt card", "book cover", "perspective", "publisher"],
+  height: 528,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The book stands still at a fixed three-quarter turn with its spine and paper band in view and the highlight resting near the top corner.",
+  perf: "One frame loop writes a single rotation and moves one highlight layer, and it stops once the book settles or scrolls out of view.",
+  intro: "A hardback built from real 3D faces: a cloth cover, a spine with its title, a block of page edges and a paper band that floats a few pixels above the cover. It turns toward the pointer while keeping its spine in view, so it reads as an object on a shelf. Suits a publisher, bookshop or author page next to the blurb.",
+  customize: [
+    "Change `--w4bkc-thick` to make the book thinner or chunkier; the spine, page block and band all follow it.",
+    "Set `BASE_TURN` (React) or `BASE` (HTML) for how far the book turns at rest, and `MAX_TILT` for the extra turn toward the pointer.",
+    "Swap `--w4bkc-cover` and the band colour `#c9733f` to match a real jacket.",
+  ],
+  accessibility: [
+    "The whole book is one link whose aria-label gives the title and author, while the drawn cover text is hidden from screen readers so it is not read twice.",
+    "Keyboard focus turns the book to a fixed angle and draws an outline around the cover; a finger press tilts it toward the touch and it settles flat a moment after release.",
+  ],
+  useWhen: [
+    "A single featured title on a small press or bookshop page where the book itself is the hero image.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

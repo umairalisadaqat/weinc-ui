@@ -2,7 +2,7 @@
 
 Free React + Tailwind CSS components from [we.inc/components](https://we.inc/components), released under the MIT licence.
 
-This repository holds the 353 components that WeInc designed and wrote itself, in 33 categories. Each component lives at `components/<category>/<slug>.tsx`, next to a `<slug>.meta.ts` file with its description, usage notes, customisation tips and accessibility notes. Every component has a live preview at `https://we.inc/components/<category>/<slug>`.
+This repository holds the 667 components that WeInc designed and wrote itself, in 35 categories. Each component lives at `components/<category>/<slug>.tsx`, next to a `<slug>.meta.ts` file with its description, usage notes, customisation tips and accessibility notes. Every component has a live preview at `https://we.inc/components/<category>/<slug>`.
 
 ## Using a component
 
@@ -27,32 +27,34 @@ Replace `<slug>` with the file name without `.tsx`.
 
 | Category | Components |
 |---|---|
+| `backgrounds` | 74 |
+| `text-effects` | 64 |
+| `scroll-effects` | 57 |
+| `galleries` | 49 |
+| `motion-graphics` | 49 |
 | `originals` | 46 |
 | `inputs` | 24 |
+| `navigation` | 22 |
 | `ecommerce` | 21 |
-| `galleries` | 21 |
+| `loaders` | 21 |
 | `toggles` | 21 |
+| `cursors` | 20 |
+| `animated-buttons` | 18 |
+| `animated-cards` | 17 |
 | `hero-sections` | 16 |
 | `feedback` | 15 |
-| `animated-cards` | 14 |
+| `navbars` | 15 |
 | `app-ui` | 14 |
-| `navigation` | 14 |
 | `content` | 13 |
 | `dashboard` | 13 |
-| `backgrounds` | 12 |
-| `text-effects` | 12 |
-| `loaders` | 11 |
+| `footers` | 12 |
+| `marquees` | 10 |
 | `forms` | 8 |
 | `pricing` | 8 |
-| `cursors` | 7 |
-| `navbars` | 7 |
 | `testimonials` | 7 |
-| `animated-buttons` | 6 |
-| `scroll-effects` | 6 |
 | `cta-sections` | 5 |
 | `faq` | 5 |
 | `timelines` | 5 |
-| `footers` | 4 |
 | `modals` | 4 |
 | `buttons` | 3 |
 | `cards` | 3 |
@@ -60,7 +62,7 @@ Replace `<slug>` with the file name without `.tsx`.
 | `docks` | 2 |
 | `feature-sections` | 2 |
 | `tables` | 2 |
-| **Total** | **353** |
+| **Total** | **667** |
 
 ## Adapted components are not included
 

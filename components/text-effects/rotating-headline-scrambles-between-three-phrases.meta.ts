@@ -1,0 +1,32 @@
+export default {
+  slug: "rotating-headline-scrambles-between-three-phrases",
+  category: "text-effects",
+  name: "Rotating Headline Scrambles Between Three Phrases",
+  keyword: "rotating text scramble",
+  tags: ["text scramble effect", "rotating headline", "hero text", "monospace"],
+  height: 680,
+  section: true,
+  interactive: true,
+  collection: "text-reveal-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The first phrase stays put, and the three buttons swap the phrase instantly with no letter noise.",
+  perf: "One short frame loop rewrites a single line for under a second per change, then a timer waits; both stop off screen.",
+  intro: "A forest green hero for a flour mill where the second line of the headline cycles through three grains. Each change shuffles the amber monospace line in lower case and settles it from the left, then rests for several seconds so it reads as a still sentence most of the time. Three buttons jump to a grain and stop the rotation, and hovering the headline replays the current one.",
+  customize: [
+    "Put your own lines in `PHRASES`; the longest one fixes the reserved width so the photo never shifts.",
+    "Lengthen `HOLD` if the phrases are long, so each is read in full before it changes.",
+    "Change `--w3rph-bg`, `--w3rph-ink` and `--w3rph-accent` in the HTML version for a new palette.",
+  ],
+  accessibility: [
+    "The full sentence naming all three grains sits in a visually hidden span, and the moving line is aria-hidden.",
+    "The grain buttons use aria-pressed and pressing any of them ends the automatic rotation, which doubles as the pause control.",
+  ],
+  useWhen: [
+    "A hero that needs to name two or three products or services in one headline without a slider.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,32 @@
+export default {
+  slug: "product-photo-scales-to-full-bleed-on-scroll",
+  category: "scroll-effects",
+  name: "Product Photo Scales to Full Bleed",
+  keyword: "image scale on scroll",
+  title: "",
+  description: "",
+  intro: "A product launch block for a desk lamp maker on a graphite page. Under the name and price, the product photograph waits as a small rounded card and grows smoothly to the full width of the section as it reaches the middle of the view, where a short materials caption settles over the corner. Specs and a reserve button follow underneath.",
+  useWhen: [
+    "A single-product page where one photograph should take over the screen at the right moment.",
+    "A launch or pre-order block that moves from headline to image to details in one scroll.",
+  ],
+  customize: [
+    "Set the starting size with `--w7scl-from`; 0.4 to 0.7 keeps the card readable before it grows.",
+    "Change the frame height in `.w7scl-stage` and the focus point with `transform-origin` on `.w7scl-frame`.",
+    "Retune `--w7scl-brass` for the accent and `--w7scl-bg` for the page colour.",
+  ],
+  accessibility: [
+    "The photo keeps real alt text and the caption is a `figcaption`, readable at every scale.",
+    "Reduced motion shows the photo at full size with its caption, and the demo scroll stays off.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["scale on scroll", "full bleed image", "product launch", "view timeline", "dark section"],
+  height: 640,
+  section: true,
+  collection: "scroll-animation",
+  tech: "css",
+  support: "Chrome, Edge and Safari 26+; script fallback elsewhere",
+  reducedMotion: "The photograph is shown full width with its caption, and nothing scales.",
+  perf: "One scale transform and one opacity, both on the scroll timeline; the fallback measures once per scrolled frame.",
+} satisfies UiMeta;

@@ -1,0 +1,30 @@
+export default {
+  slug: "film-grain-and-flicker-over-a-foggy-photo-hero",
+  category: "backgrounds",
+  name: "Film Grain and Flicker Over a Foggy Photo Hero",
+  keyword: "film grain overlay css",
+  tags: ["film grain", "photo hero", "noise overlay", "flicker", "feTurbulence"],
+  height: 600,
+  section: true,
+  collection: "animated-background-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The photo, dark scrim and grain all stay on screen as one still frame; only the jumping, weave and flicker stop.",
+  perf: "Three small keyframe loops move or fade layers that are already painted, and an observer pauses them while the hero is out of view.",
+  intro: "A full-width photo hero treated like projected film: grain from an SVG noise tile jumps to a new spot several times a second, the picture weaves by a single pixel, and a faint light flicker comes and goes. The scrim darkens toward the text, so the headline and two buttons stay readable over a bright, foggy photo.",
+  customize: [
+    "Set `--w4fgr-grain` for how strong the grain looks and `--w4fgr-flicker` to `0` if you want grain without flicker.",
+    "Change `--w4fgr-shade` (r, g, b) to tint the scrim toward your brand, and `object-position` on `.w4fgr-photo` to keep your subject in frame.",
+    "Slow the grain by raising the `.6s` on `.w4fgr-film::after`, for a calmer, less jittery texture.",
+  ],
+  accessibility: [
+    "The flicker changes brightness by only a few percent and never flashes; the text sits on a scrim dark enough to keep contrast above 4.5 to 1 at every frame.",
+  ],
+  useWhen: [
+    "A cabin, film, travel or photography site where the hero photo should feel shot on film rather than on a phone.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "terracotta-curtain-menu-that-drops-with-rising-links",
+  category: "navbars",
+  name: "Terracotta Curtain Menu That Drops With Rising Links",
+  keyword: "fullscreen menu css",
+  tags: ["fullscreen menu", "curtain reveal", "overlay navigation", "staggered links", "restaurant"],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The curtain appears in place at once with every link already showing, and closes the same way.",
+  perf: "Two CSS transitions on layers that already exist; the script only flips a class and runs nothing per frame.",
+  intro: "A terracotta curtain falls from the top of a trattoria page and settles over it, then five serif links climb out of their own slots one after another, with the address and a phone link fading in along the bottom edge. It suits a restaurant or cafe whose navigation is short enough to read in one glance.",
+  customize: [
+    "Change `--w7cur-curtain` and `--w7cur-cream` for the curtain colour and the text on it.",
+    "Slow or speed the whole reveal with `--w7cur-speed`; the link stagger is the `.04s` step in the `.w7cur-open .w7cur-nav a span` rule.",
+    "Set `AUTO_OPEN` to 0 so the menu stays shut until someone presses the button.",
+  ],
+  accessibility: [
+    "The button reports aria-expanded, focus moves to the first link and stays inside the curtain, Escape or picking a link closes it and puts focus back on the button, and the hero behind is inert while it is open.",
+  ],
+  useWhen: [
+    "A restaurant or bar site has four to six pages and wants the menu to feel like part of the room.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

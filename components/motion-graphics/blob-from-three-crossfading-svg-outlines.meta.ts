@@ -1,0 +1,30 @@
+export default {
+  slug: "blob-from-three-crossfading-svg-outlines",
+  category: "motion-graphics",
+  name: "Blob From Three Crossfading SVG Outlines",
+  keyword: "morphing svg",
+  tags: ["svg morph", "crossfade", "newsletter", "blob", "florist"],
+  height: 600,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The rose outline stays in place over its faint sand shadow, with the stem drawing on top.",
+  perf: "Three fixed paths fade and turn a few degrees in turn, so at most two are changing at any moment.",
+  intro: "A florist newsletter signup where the picture beside the form is a single blob that seems to melt from rose to peach to coral. In truth it is three separate outlines stacked on a faint base, each holding for a few seconds and then fading as the next one fades in, with a small turn to hide the swap. Phones put the picture above the form.",
+  customize: [
+    "Set the three colours with `--m2xfd-f1`, `--m2xfd-f2` and `--m2xfd-f3`; similar lightness makes the crossfade read as one shape.",
+    "Change the 12s on `.m2xfd-s` and keep the two delays at minus two thirds and minus one third of it.",
+    "Replace the stem group with your own line drawing, or remove it for a plain shape.",
+  ],
+  accessibility: [
+    "The email field has a visible label and autocomplete, and the artwork is hidden from screen readers.",
+  ],
+  useWhen: [
+    "A signup or contact block needs a soft visual that keeps changing colour without a photo.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

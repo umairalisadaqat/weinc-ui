@@ -1,0 +1,31 @@
+export default {
+  slug: "announcement-bar-marquee-with-linked-notices",
+  category: "marquees",
+  name: "Announcement Bar Marquee With Linked Notices",
+  keyword: "announcement bar marquee",
+  tags: ["announcement bar", "top bar", "marquee", "links", "shop header"],
+  height: 440,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The notices stand still in one line that can be scrolled sideways, and the pause button is hidden.",
+  perf: "A slim strip moved by one transform on the compositor, held still once it leaves the screen.",
+  intro: "A dark top bar above a boot maker's shop header runs four short notices, and each one is a real underlined link to a page on the site. Tabbing into a link stops the bar so the focus ring never slides away, and the copy used for the seamless loop is skipped by Tab. A square icon button at the end pauses it for good. Fits any shop or booking site header.",
+  customize: [
+    "Edit `notices` with your own label and link for each message; four or five short ones read best.",
+    "Change `--w3ann-speed` for the pace and `--w3ann-ink` for the bar colour.",
+    "Set `--w3ann-focus` to a colour that stands out against your bar for the focus ring.",
+  ],
+  accessibility: [
+    "Links in the repeated half have tabindex -1 and the list is aria-hidden, so keyboard and screen reader users meet each notice exactly once.",
+    "Focus inside the bar pauses it through :focus-within.",
+  ],
+  useWhen: [
+    "A shop has a few rotating messages, such as a deadline and a delivery promise, that each need a link.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

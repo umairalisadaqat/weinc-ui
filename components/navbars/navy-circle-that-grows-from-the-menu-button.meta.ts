@@ -1,0 +1,37 @@
+export default {
+  slug: "navy-circle-that-grows-from-the-menu-button",
+  category: "navbars",
+  name: "Navy Circle That Grows From the Menu Button",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "circle reveal",
+    "menu animation",
+    "overlay",
+    "sailing",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The navy cover and links appear instantly in their final places, with no growing circle.",
+  perf: "One large pre-drawn circle is scaled on the compositor, so opening costs a single layer animation and no repaint per frame.",
+  intro: "Pressing Menu on this sailing school page grows a deep navy disc outward from the button itself until it fills the frame, and the right-aligned links drop in from that same corner. The disc is drawn at full size first and only scaled, so the reveal stays smooth even on modest phones.",
+  customize: [
+    "Change `--w7cir-sea` for the disc and `--w7cir-acc` for the underline under the current page.",
+    "If you move the button, update the `top` and `right` offsets on `.w7cir-disc` so the circle still starts under it.",
+    "Use `--w7cir-speed` for the opening time and `--w7cir-out` for the closing time.",
+  ],
+  accessibility: [
+    "Focus goes to the first link when someone opens the menu, stays between the button and the links, and returns to the button on Escape; the photo hero is inert underneath.",
+  ],
+  useWhen: [
+    "The menu button sits in a corner and you want the overlay to feel like it came from that button.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

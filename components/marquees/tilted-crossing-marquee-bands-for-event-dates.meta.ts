@@ -1,0 +1,31 @@
+export default {
+  slug: "tilted-crossing-marquee-bands-for-event-dates",
+  category: "marquees",
+  name: "Tilted Crossing Marquee Bands For Event Dates",
+  keyword: "marquee animation",
+  tags: ["tilted bands", "event", "announcement", "marquee", "pottery"],
+  height: 460,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Both bands keep their tilt and colour but hold still, and the event paragraph below them is unchanged.",
+  perf: "Two rotated strips each move one inner transform; nothing repaints beyond the compositor.",
+  intro: "A clay coloured band and a dark ink band cross at slight opposite angles and run in opposite directions, announcing a pottery open weekend like tape across a studio door. The front band lifts off the page with a soft shadow. The dates, times and activities are also written out in a paragraph beneath, so the bands can stay decorative. Use it for a launch, open day or sale.",
+  customize: [
+    "Adjust `--w3tlt-tilt-a` and `--w3tlt-tilt-b` for steeper or flatter angles; keep them small so text stays readable.",
+    "Change `--w3tlt-clay` and `--w3tlt-ink` to recolour the two bands.",
+    "Edit the `front` and `back` arrays with your own short phrases; three to five words each reads best.",
+  ],
+  accessibility: [
+    "The whole stage of crossing bands is aria-hidden, since a heading and paragraph give the same event details in reading order.",
+    "A bordered pill button with aria-pressed stops both bands.",
+  ],
+  useWhen: [
+    "An event or sale needs a poster-like burst of energy at the top of a page.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

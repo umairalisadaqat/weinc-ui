@@ -1,0 +1,30 @@
+export default {
+  slug: "link-underline-sweeping-in-from-the-entry-side",
+  category: "animated-buttons",
+  name: "Link Underline Sweeping In From the Entry Side",
+  keyword: "css link underline animation",
+  tags: ["link hover", "underline animation", "footer links", "scaleX", "transform-origin"],
+  height: 328,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Underlines appear and disappear at once with no sweep, and the idle walk through the links never starts.",
+  perf: "Each line is one scaled pseudo-element; the script only sets a transform origin on enter and leave plus a slow timer for the demo.",
+  intro: "A bookshop footer whose links draw a rust underline that grows from whichever side the mouse came in and slides away toward the side it left by. A short script reads the entry and exit edge and swaps the transform origin. While nobody is pointing, the line walks from link to link so the footer shows what it does.",
+  customize: [
+    "Recolour the line with `--w3und-line` and change its pace with `--w3und-speed`.",
+    "Slow or speed the idle walk through the links with `DEMO_EVERY` in milliseconds.",
+    "Edit the link names in the `groups` array (React) or the list items (HTML).",
+  ],
+  accessibility: [
+    "Tabbing to a link draws its underline from the left and adds a dark outline, and the demo stops while focus is inside the footer.",
+  ],
+  useWhen: [
+    "Footer, sidebar or article links where a quiet but precise hover suits a literary or editorial brand.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

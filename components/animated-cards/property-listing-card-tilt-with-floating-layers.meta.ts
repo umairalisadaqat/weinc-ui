@@ -1,0 +1,31 @@
+export default {
+  slug: "property-listing-card-tilt-with-floating-layers",
+  category: "animated-cards",
+  name: "Property Listing Card Tilt With Floating Layers",
+  keyword: "3d tilt property card css",
+  tags: ["property card", "tilt card", "translateZ layers", "real estate", "parallax depth"],
+  height: 586,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The listing sits at one fixed slight angle with its price pill, date tag and details already lifted off the card, and nothing follows the pointer.",
+  perf: "A frame loop writes one rotation and one highlight transform while the card is moving, then stops until the next pointer or focus change.",
+  intro: "A rental listing card whose parts sit at different depths: the photo floats above a white base, the details sit a little higher, and the price pill and move-in tag hover highest, so they slide against each other as the card tips toward the pointer. A soft light moves across the photo. On phones it tilts toward a pressed finger and eases flat after release.",
+  customize: [
+    "Raise or lower the `translateZ` values on `.w4prl-price`, `.w4prl-tag`, `.w4prl-photo` and `.w4prl-info` to spread the layers further apart or press them flatter.",
+    "Change `MAX_TILT` (React) or `MAX` (HTML) for the angle, and `--w4prl-accent` for the green used on icons, the tag and the button.",
+    "Edit the `specs` array (React) or the three spans in `.w4prl-specs` (HTML) to list other features.",
+  ],
+  accessibility: [
+    "The card is one link with an aria-label that reads the address, size, type and rent in a single sentence; the visual parts inside are hidden from screen readers.",
+    "Focusing the card with the keyboard tips it to a set angle and draws a green outline around the white base.",
+  ],
+  useWhen: [
+    "Featuring one home on an agent or lettings page, where depth makes the listing feel more tangible than a flat grid tile.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

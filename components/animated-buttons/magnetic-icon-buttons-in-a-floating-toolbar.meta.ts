@@ -1,0 +1,31 @@
+export default {
+  slug: "magnetic-icon-buttons-in-a-floating-toolbar",
+  category: "animated-buttons",
+  name: "Magnetic Icon Buttons in a Floating Toolbar",
+  keyword: "magnetic icon buttons",
+  tags: ["magnetic button", "toolbar", "icon buttons", "dock", "hover effect"],
+  height: 560,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The icons hold still in their row, and hover or focus simply shows a white backing and a name tag.",
+  perf: "A single frame loop reads five button positions and writes five transforms, paused when the bar is off screen.",
+  intro: "A rounded toolbar of five outline icons sits under a field note on a cool grey page. Each icon nudges toward the mouse when it comes close, lifts onto a white disc and shows its name in a small dark tag. A pretend pointer glides along the bar at rest, so the effect is visible before anyone touches it.",
+  customize: [
+    "Adjust `PULL` for how far icons lean and `RADIUS` for how close the mouse must be before they react.",
+    "Swap the icons by editing the `d` path strings in the `tools` array, keeping the 24 by 24 grid.",
+    "Change `--w3nav-size` to make every button bigger or smaller without touching the script.",
+  ],
+  accessibility: [
+    "Every icon link carries an aria-label, the current page is marked with aria-current, and Tab shows the same disc and name tag as hovering.",
+    "On touch screens the icons never move and keep a 48px tap area.",
+  ],
+  useWhen: [
+    "An app-style dashboard or portfolio needs a compact icon dock that feels responsive under the mouse.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "course-rows-with-a-photo-band-splitting-open",
+  category: "galleries",
+  name: "Course Rows With A Splitting Photo Band",
+  keyword: "image reveal on hover css",
+  tags: ["split reveal", "hover row", "full width", "navy", "courses"],
+  height: 640,
+  section: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Rows show a small photo beside each course name and the band behind the words never opens.",
+  perf: "Each reveal translates two half-height masks and fades one shade layer, all on the compositor.",
+  intro: "A boat club's course list in large type on deep navy. Hover or focus a row and the full-width photo behind it arrives in two halves, one sliding down and one sliding up until they meet, while a dark shade keeps the course name readable. Phones and reduced motion get a thumbnail per row instead.",
+  customize: [
+    "Change `--w8sea-time` to slow the two halves down or speed them up.",
+    "Raise or lower `--w8sea-shade` for a darker or lighter photo under the words.",
+    "Swap `--w8sea-gold` to recolour the label and the focus outline.",
+  ],
+  accessibility: [
+    "The band photos are decorative copies and hidden from screen readers; the phone thumbnail carries the description.",
+    "The focus outline sits inside the row so it stays visible over the photo.",
+  ],
+  useWhen: [
+    "A short list of big, distinct choices such as classes, trips or services, where one wide photo per row sets the mood.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "testimonial-slider-with-big-quote-and-drag",
+  category: "galleries",
+  name: "Testimonial Slider With Big Quote and Drag",
+  keyword: "testimonial slider",
+  tags: ["carousel slider", "testimonial slider", "quotes", "drag slider", "reviews"],
+  height: 450,
+  section: true,
+  interactive: true,
+  collection: "carousel-slider",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "One quote shows at a time and the buttons, keys and drag release swap straight to the next quote without fading.",
+  perf: "Per frame it writes one track transform plus an opacity and transform for each of the four quotes, and only while moving.",
+  intro: "Client notes for a furniture restorer, set large in a serif on a terracotta-tinted panel, one note at a time. Pulling sideways drags the quote with your finger while it fades out and the next fades in, and a quick flick carries on to the following note. Heading, counter and arrows sit in a side column that stacks above on phones.",
+  customize: [
+    "Raise `FADE` so a quote vanishes sooner as it slides away, or lower it to keep two quotes visible mid-drag.",
+    "Set the quote size with `--w1quo-size` and the mark and initials colour with `--w1quo-accent`.",
+    "Edit the four `figure` blocks to change the words, names and the item each person brought in.",
+  ],
+  accessibility: [
+    "Every quote is a real blockquote with a figcaption naming the person, and the counter is hidden from screen readers because the live region already announces the slide number.",
+  ],
+  useWhen: [
+    "A trade or service business wants a few longer client notes to be read properly, one after another.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

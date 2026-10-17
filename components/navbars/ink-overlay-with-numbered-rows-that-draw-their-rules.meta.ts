@@ -1,0 +1,37 @@
+export default {
+  slug: "ink-overlay-with-numbered-rows-that-draw-their-rules",
+  category: "navbars",
+  name: "Ink Overlay With Numbered Rows That Draw Their Rules",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "numbered links",
+    "typographic menu",
+    "overlay",
+    "line animation",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The dark sheet shows at once with the rules drawn and every number and name in place.",
+  perf: "Pure CSS transitions on rules and text spans; nothing runs once the rows have settled.",
+  intro: "An ink-dark sheet fades over a bookbinder's page, a hairline rule draws across from the left for each row, and then a small gold number and a large serif page name lift out of each line in turn. A short gold underline marks the current page and follows hover and keyboard focus.",
+  customize: [
+    "Set `--w7num-dark` for the sheet and `--w7num-acc` for the numbers and underline.",
+    "Spread the rows out in time with `--w7num-step`.",
+    "Change the numbers in each `<small>` if your pages are not in a fixed order, or remove them.",
+  ],
+  accessibility: [
+    "Every row is a single link with its number inside it, so the number is read with the page name; focus is held inside the sheet and returns to the button on Escape.",
+  ],
+  useWhen: [
+    "A craft, print or editorial site wants a menu built from type and lines with no imagery.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

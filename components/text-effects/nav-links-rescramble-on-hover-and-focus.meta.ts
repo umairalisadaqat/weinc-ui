@@ -1,0 +1,32 @@
+export default {
+  slug: "nav-links-rescramble-on-hover-and-focus",
+  category: "text-effects",
+  name: "Nav Links Rescramble On Hover And Focus",
+  keyword: "text scramble hover effect",
+  tags: ["text scramble effect", "navigation hover", "monospace nav", "focus effect"],
+  height: 520,
+  section: true,
+  interactive: true,
+  collection: "text-reveal-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The menu labels stay as plain words and only the thin underline appears under the hovered or focused link.",
+  perf: "Each scramble rewrites one short label for about half a second, then nothing runs until the next hover or focus.",
+  intro: "A monospace header menu for an architecture practice on warm paper. Every label shuffles through capitals and digits and resettles left to right whenever a pointer enters it or keyboard focus lands on it, while a terracotta rule draws in underneath. The labels decode once as the header comes into view, and a slow demo touches one link at a time until someone arrives.",
+  customize: [
+    "Edit `GLYPHS` to change the noise characters; keep them the same width as the label font.",
+    "Raise `STEP` for a slower settle per letter, or lower `LEAD` to start settling sooner.",
+    "Recolour through `--w3nvs-bg`, `--w3nvs-ink` and `--w3nvs-accent` in the HTML version.",
+  ],
+  accessibility: [
+    "Each link carries its word in `aria-label` and the shuffling text sits in an aria-hidden span, so assistive tech reads Projects, never the noise.",
+    "Focus by keyboard triggers the same scramble and underline, with a visible outline around the link.",
+  ],
+  useWhen: [
+    "A studio, agency or lab site with a short menu where a small technical flourish on hover suits the brand.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,30 @@
+export default {
+  slug: "button-fill-rising-from-the-pointer-entry-point",
+  category: "animated-buttons",
+  name: "Button Fill Rising From the Pointer Entry Point",
+  keyword: "button hover fill from cursor direction",
+  tags: ["button hover", "fill effect", "direction aware", "outline button", "scale"],
+  height: 480,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The terracotta fill and light label switch on instantly, without the growing circle or the idle demo.",
+  perf: "A scaled circle and a label crossfade per button; the script only places the circle on enter and leave.",
+  intro: "Three outline pill buttons for a dry-garden designer, where a terracotta circle grows out of the exact point the mouse crossed the border and shrinks back toward wherever it leaves. Keyboard focus fills from the centre. The first button fills and empties from a new edge every couple of seconds so the effect reads in a still preview.",
+  customize: [
+    "Recolour with `--w3fil-fill` for the circle and `--w3fil-on` for the label shown on top of it.",
+    "Change `--w3fil-speed` for a slower bloom, or `DEMO_EVERY` for the idle rhythm.",
+    "Keep the circle `width` at 230% or more on wide buttons so its edge never shows in a corner.",
+  ],
+  accessibility: [
+    "The light label is a hidden duplicate, so screen readers hear each button once, and the fill uses two crossfaded labels instead of a colour animation.",
+  ],
+  useWhen: [
+    "A row of secondary actions where an outline style should feel as deliberate as a solid button.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

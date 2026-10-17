@@ -1,0 +1,37 @@
+export default {
+  slug: "slate-page-that-shrinks-aside-to-uncover-the-menu",
+  category: "navbars",
+  name: "Slate Page That Shrinks Aside to Uncover the Menu",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "push menu",
+    "page shift",
+    "off canvas",
+    "bike shop",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The page jumps straight to its shifted position with the menu visible, without sliding or scaling.",
+  perf: "One transform on the page layer plus a pre-drawn shadow whose opacity fades, so the shadow is never repainted.",
+  intro: "Here the menu never moves: the bicycle workshop page itself shrinks into a rounded card and slides off to the left, uncovering the links that were lying underneath on a pale slate ground. A soft shadow fades in under the shifted page so it reads as a sheet lifted off the menu.",
+  customize: [
+    "Set how far the page travels with `--w7psh-shift` and how small it gets with `--w7psh-shrink`; the phone value of the shift is in the small-screen rule.",
+    "Keep the left padding of `.w7psh-menu` clear of the shifted page if you change those two values.",
+    "Colour the ground under the page with `--w7psh-bg` and the links with `--w7psh-acc`.",
+  ],
+  accessibility: [
+    "The shifted page is inert, so its links cannot be tabbed into while it sits to one side; focus starts on the first menu link and the Close button stays reachable inside the trap.",
+  ],
+  useWhen: [
+    "An app-like site wants the menu to feel like it lives underneath the page rather than on top of it.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

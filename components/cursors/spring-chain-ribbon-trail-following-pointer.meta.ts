@@ -1,0 +1,32 @@
+export default {
+  slug: "spring-chain-ribbon-trail-following-pointer",
+  category: "cursors",
+  name: "Spring Chain Ribbon Trail",
+  keyword: "spring cursor trail",
+  title: "",
+  description: "",
+  intro: "A sailmaker's hero on deep harbour navy with a sand-coloured ribbon that chases the pointer. The head of the ribbon rides a spring toward the mouse and every link eases after the one ahead, so quick moves make it overshoot and swing like a rope in wind. It tapers and fades toward the tail and loops through the space by itself until someone takes over.",
+  useWhen: [
+    "A brand about rope, sailing, textiles or movement where a flowing line fits the story.",
+    "A quiet dark hero that needs one living element and nothing louder.",
+  ],
+  customize: [
+    "Lengthen the ribbon with `N`, make it snappier with `STIFF`, and give the head more swing by raising `DAMP` toward 0.9; a lower `LINK` makes the tail trail further behind.",
+    "Recolour it with `--w7rbn-rope`; the taper and fade are set per link when the chain is built.",
+    "Move the demo loop by editing the two `Math.sin` factors in `path`.",
+  ],
+  accessibility: [
+    "The ribbon is decorative, sits under the text and never takes clicks. Tabbing to a button pulls it just below that button, clear of the focus ring.",
+    "Reduced motion draws one still, gently curved ribbon and runs no loop.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["cursor trail", "spring physics", "rope effect", "mouse follower", "dark hero"],
+  height: 560,
+  section: true,
+  collection: "cursor-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "A single curved ribbon rests in the top right corner and does not follow anything.",
+  perf: "Twenty-three transforms per frame from a tiny spring loop; it stops when the section leaves the screen.",
+} satisfies UiMeta;

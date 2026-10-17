@@ -1,0 +1,30 @@
+export default {
+  slug: "figure-badge-inside-layered-ink-blob",
+  category: "motion-graphics",
+  name: "Figure Badge Inside Layered Ink Blob",
+  keyword: "blob animation css",
+  tags: ["blob", "badge", "stat", "svg shapes", "navy"],
+  height: 532,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The badge shows its ink shapes and gold outline at rest, with the time readable in the middle.",
+  perf: "Two filled paths and one outline rotate on separate slow cycles; the circle under the figure never moves.",
+  intro: "One short figure, the time a bakery lights its ovens, set in a badge of deep ink blobs on a pale slate section. Behind the number a still circle guarantees a dark ground, while the blob layers and a thin gold line turn around it so the badge edge keeps shifting. Phones place the badge under the text.",
+  customize: [
+    "Put your own figure and caption in `.m2fig-num` and `.m2fig-unit`; short values of four or five characters fit best.",
+    "Grow `r` on the `.m2fig-core` circle if a longer figure needs more dark ground behind it.",
+    "Recolour the inks with `--m2fig-i1`, `--m2fig-i2` and `--m2fig-i3`, keeping `--m2fig-on` light for contrast.",
+  ],
+  accessibility: [
+    "The figure is real text read in order with its caption, and the shapes behind it are an aria-hidden SVG.",
+  ],
+  useWhen: [
+    "An about section has one memorable fact, like an opening hour or a founding year, that deserves to stand out from the paragraph.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,37 @@
+export default {
+  slug: "clay-blind-slats-that-unroll-into-a-menu",
+  category: "navbars",
+  name: "Clay Blind Slats That Unroll Into a Menu",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "blinds reveal",
+    "slat animation",
+    "ceramics",
+    "navigation overlay",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The blind is already down and every link visible the moment the menu opens.",
+  perf: "Six thin layers scale in once each; no script runs during the motion.",
+  intro: "Six clay-coloured slats unroll from the top of a ceramics studio page one under the other, like a slatted blind being let down, and once the last one lands the page names fade up over the stripes. Alternate slats are a shade darker so the blind keeps a faint texture behind the type.",
+  customize: [
+    "Change `--w7bld-clay` and the darker even slat colour in `.w7bld-slats i:nth-child(even)`.",
+    "Raise `--w7bld-step` for a slower, more visible cascade of slats.",
+    "Change the slat count by editing the number of `<i>` elements and `repeat(6, 1fr)` together.",
+  ],
+  accessibility: [
+    "The slats are hidden from assistive technology; the links sit in a nav list, focus is trapped while the blind is down, and the button gets focus back when it rolls up.",
+  ],
+  useWhen: [
+    "A maker, shop or studio wants a menu reveal with a handmade, material feel.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "pill-button-with-looping-marquee-label",
+  category: "marquees",
+  name: "Pill Button With Looping Marquee Label",
+  keyword: "marquee button css",
+  tags: ["button", "hover effect", "marquee", "call to action", "tailor"],
+  height: 520,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Hover or focus swaps the button to its pale blue lit colour at once, with the label standing still.",
+  perf: "The tiny label loop only runs while the button is lit; at rest nothing animates.",
+  intro: "A dark navy pill for a tailoring shop's booking link. On hover or keyboard focus its label slips upward and a pale blue strip rises in its place, looping the same words with arrows like a small ticker inside the button. While nobody is pointing, it lights itself every few seconds so the preview shows the effect. Fits the main call to action on a quiet, typographic page.",
+  customize: [
+    "Change `LABEL` (or the link text in HTML); the looping copy is built from it.",
+    "Set `--w3btn-lit` for the strip colour and `--w3btn-ink` for the resting button.",
+    "Lower `--w3btn-speed` for a quicker loop inside the pill.",
+  ],
+  accessibility: [
+    "The link is named by its still label alone; the looping strip is aria-hidden and added purely for show.",
+    "Focus triggers the same strip as hover and draws an offset outline outside the pill, so the ring is never hidden by the strip.",
+  ],
+  useWhen: [
+    "One booking or contact link should feel tactile without moving the whole layout.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

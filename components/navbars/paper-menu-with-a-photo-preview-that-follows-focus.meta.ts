@@ -1,0 +1,37 @@
+export default {
+  slug: "paper-menu-with-a-photo-preview-that-follows-focus",
+  category: "navbars",
+  name: "Paper Menu With a Photo Preview That Follows Focus",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "image preview",
+    "hover reveal",
+    "guesthouse",
+    "navigation overlay",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The sheet and first photo appear without fading, photos swap instantly on hover or focus, and the automatic cycle stays off.",
+  perf: "Opacity and transform on four stacked images; the idle timer does nothing while the piece is off screen or in use.",
+  intro: "A warm paper sheet fades over a small guesthouse page with four serif links on one side and a framed photograph on the other. Pointing at a link or tabbing onto it brings up its own picture with a slow settle, and while nobody touches it the preview steps through the rooms, breakfast, terrace and coast path by itself.",
+  customize: [
+    "Each link's `data-n` matches the photo with the same `data-n`; add a fifth pair and extend the `[data-show]` rules.",
+    "Set `CYCLE` for how long each photo holds during the idle demo.",
+    "Recolour the sheet with `--w7img-sheet` and the numbers and current page with `--w7img-acc`.",
+  ],
+  accessibility: [
+    "The pictures are decoration, so the frame is hidden from screen readers and dropped on phones; every link still says where it goes, and focus is trapped and returned like the other menus.",
+  ],
+  useWhen: [
+    "A hotel, venue or holiday let wants each page name paired with a picture of the place.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

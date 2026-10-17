@@ -1,0 +1,30 @@
+export default {
+  slug: "precision-crosshair-cursor-with-live-coordinate-readout",
+  category: "cursors",
+  name: "Precision Crosshair With Coordinate Readout",
+  keyword: "crosshair cursor",
+  title: "",
+  description: "",
+  intro:
+    "Full-length guide lines cross under the pointer on a sample artboard, snapping to an 8 pixel grid, while a small tag beside them reads out the X and Y position and markers slide along both rulers. It sells a layout or design tool in its own hero. Keyboard users can focus the board and nudge the crosshair with the arrow keys, and a tap places it on touch screens.",
+  useWhen: ["The hero of a design, mapping, measuring or layout product where precision is the promise."],
+  customize: [
+    "Change `GRID` to snap to a coarser or finer step; set it to 1 for free movement.",
+    "Recolour the lines, rulers and tag through `--w2crs-line`, keeping white text on it readable.",
+    "Replace the grey placeholder blocks inside `.w2crs-art` with a real screenshot of your own interface.",
+  ],
+  accessibility: [
+    "The artboard is focusable with instructions in its label, arrow keys move the crosshair, and each move is announced through a polite live region.",
+    "The system cursor only hides over the board for a mouse with motion allowed; the focus outline sits outside the board so the lines never cover it.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["crosshair cursor", "coordinates", "design tool hero", "rulers"],
+  height: 544,
+  section: true,
+  collection: "cursor-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The idle drift is off; the crosshair rests in place and moves only when you point, tap or press an arrow key.",
+  perf: "Five small elements moved with transform and one text update per move; the idle loop stops for real input and off screen.",
+} satisfies UiMeta;

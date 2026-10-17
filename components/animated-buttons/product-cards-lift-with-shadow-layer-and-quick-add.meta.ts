@@ -1,0 +1,32 @@
+export default {
+  slug: "product-cards-lift-with-shadow-layer-and-quick-add",
+  category: "animated-buttons",
+  name: "Product Cards Lift With Shadow and Quick Add",
+  keyword: "product card hover effect",
+  title: "",
+  description: "",
+  intro: "A three-product shelf for a homeware shop on deep olive. Pointing at a card raises it, eases the photo in slightly and fades in a long soft shadow that was painted in advance, while an add to basket bar slides up over the bottom of the picture. Tabbing into a card does the same. On touch screens the add button is simply always visible.",
+  useWhen: [
+    "A shop grid or new-arrivals row where buying straight from the listing saves a click.",
+    "Any card grid on a dark background where lift needs a deep shadow to read.",
+  ],
+  customize: [
+    "Set how far a card rises with `--w7crd-lift` and the shadow tone with `--w7crd-shadow`.",
+    "Retune the shadow itself in `.w7crd-c::after`; it is drawn once, so heavier shadows cost nothing extra while hovering.",
+    "Swap products by editing each `li.w7crd-c`: photo, name link, short detail and price.",
+  ],
+  accessibility: [
+    "Each card has a real heading link and a real button, and `:focus-within` reveals the button for keyboard users.",
+    "Reduced motion keeps the lift state but removes the transitions and the photo zoom.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["product card", "card hover", "shadow fade", "quick add", "ecommerce grid"],
+  height: 620,
+  section: true,
+  collection: "hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Cards still show the lifted state and add button on hover or focus, but switch instantly with no zoom or demo.",
+  perf: "Hover changes only transforms and the opacity of a pre-painted shadow layer; a small timer runs the demo until someone interacts.",
+} satisfies UiMeta;

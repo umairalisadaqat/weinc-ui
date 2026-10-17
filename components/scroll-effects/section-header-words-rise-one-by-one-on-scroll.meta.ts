@@ -1,0 +1,32 @@
+export default {
+  slug: "section-header-words-rise-one-by-one-on-scroll",
+  category: "scroll-effects",
+  name: "Section Header Words Rise One by One",
+  keyword: "word by word heading reveal on scroll",
+  title: "",
+  description: "",
+  intro: "Four numbered sections for a garden design practice, each led by a serif heading whose words climb out of their own hidden slot, one after another with a slight tilt that straightens as they land. The body copy follows a beat later. Headings already on screen when the page opens are left in place, so only what you scroll to performs.",
+  useWhen: [
+    "A services or process page where every section opens with a short, quotable heading.",
+    "A calm, editorial brand that wants motion that reads like typesetting rather than a slide show.",
+  ],
+  customize: [
+    "Set the gap between words with `--w7wrd-step` and the length of each rise with `--w7wrd-dur` on `.w7wrd`.",
+    "Remove `rotate(5deg)` from the armed rule for a straight vertical rise.",
+    "Recolour the page with `--w7wrd-bg`, `--w7wrd-ink` and `--w7wrd-moss`.",
+  ],
+  accessibility: [
+    "Each heading is a single `h2`; the word wrappers are plain spans, so it is read as one sentence.",
+    "With reduced motion every heading and paragraph is visible from the start and the demo scroll never runs.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["heading reveal", "word stagger", "scroll reveal", "intersection observer", "serif headings"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "All four headings and their paragraphs are shown in place, with no rising words and no demo scroll.",
+  perf: "One observer flips a class per heading; the browser then runs short transform and opacity transitions on its own.",
+} satisfies UiMeta;

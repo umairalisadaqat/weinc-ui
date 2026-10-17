@@ -1,0 +1,31 @@
+export default {
+  slug: "outlined-word-marquee-rows-in-opposite-directions",
+  category: "marquees",
+  name: "Outlined Word Marquee Rows In Opposite Directions",
+  keyword: "scrolling text css",
+  tags: ["big type", "outlined text", "marquee", "section divider", "bakery"],
+  height: 586,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Only the upper row stays, wrapped onto a few lines at a smaller size, with the button removed.",
+  perf: "Two compositor transforms on two tracks; both freeze through animation-play-state when off screen.",
+  intro: "Two bands of oversized serif words cross a warm paper section in opposite directions, alternating solid and hollow stroked lettering with rust dots between them. The bands are pure decoration: the same bread names sit in a normal sentence above. Use it as a loud divider between calmer sections on a food, craft or studio site.",
+  customize: [
+    "Set `--w3wrd-size` to make the words larger or smaller; the clamp keeps phones readable.",
+    "The lower band runs at `--w3wrd-speed` times 1.25; change that multiplier to separate the two rhythms more.",
+    "Edit `rowA` and `rowB` in React, or the spans inside each group in the HTML.",
+  ],
+  accessibility: [
+    "Because the bands only repeat the sentence above them, the whole moving block is aria-hidden and assistive tech reads the sentence instead.",
+    "A dark pill button with aria-pressed stops both bands at once.",
+  ],
+  useWhen: [
+    "A page needs a bold typographic break between a menu and an about section.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

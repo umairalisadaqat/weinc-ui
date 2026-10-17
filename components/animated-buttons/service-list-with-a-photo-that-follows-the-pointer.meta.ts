@@ -1,0 +1,30 @@
+export default {
+  slug: "service-list-with-a-photo-that-follows-the-pointer",
+  category: "animated-buttons",
+  name: "Service List With a Photo That Follows the Pointer",
+  keyword: "hover image follow cursor list",
+  tags: ["hover image reveal", "cursor follow", "service list", "menu hover", "photo preview"],
+  height: 560,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "There is no floating photo; every row shows its own small picture beside the name instead.",
+  perf: "One frame loop moves a single preview by transform and stops, along with the demo timer, when the list is off screen.",
+  intro: "A ruled list of pottery classes where a tilted photo of the matching class floats after the mouse as it moves down the rows, swapping pictures with a quick crossfade. Tabbing to a row parks the photo at its right end, and an idle demo steps through the rows. On phones each row simply carries a small thumbnail.",
+  customize: [
+    "Raise `FOLLOW` for a snappier photo or lower it for a lazier trail, and set `DEMO_EVERY` for the idle pace.",
+    "Change the preview size with `--w3row-pw`, keeping its 4 by 3 frame.",
+    "Edit names, lines, prices and photos in the `services` array.",
+  ],
+  accessibility: [
+    "The floating photo is decoration hidden from screen readers; every row is a plain link whose text carries the name, summary and price.",
+  ],
+  useWhen: [
+    "A studio, agency or restaurant lists a handful of offers and a picture makes each one easier to picture.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

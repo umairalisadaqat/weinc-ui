@@ -1,0 +1,30 @@
+export default {
+  slug: "text-roll-button-with-letters-rolling-up",
+  category: "animated-buttons",
+  name: "Text Roll Button With Letters Rolling Up",
+  keyword: "text roll hover button css",
+  tags: ["text roll", "button hover", "letter stagger", "pure css", "call to action"],
+  height: 500,
+  section: true,
+  collection: "hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Labels stay still and the idle roll on the first button never runs.",
+  perf: "Each letter is one translated span with its copy drawn by a pseudo-element; the only script pauses the loop off screen.",
+  intro: "A black pill and an outline pill for a coffee bar, where the label rolls upward and an identical copy rises from below. On the black button each letter starts a moment after the one before, so the word ripples; the outline button rolls as one piece for a calmer partner. The first button repeats the roll on its own every few seconds.",
+  customize: [
+    "Set `--w3rol-stagger` (or `STAGGER` in React) to spread the ripple, and `--w3rol-speed` for each letter's roll.",
+    "Change `--w3rol-loop` for the idle rhythm, or remove `w3rol-demo` to stop it.",
+    "In the HTML version, keep each letter's `data-l` the same as its text so the copy matches.",
+  ],
+  accessibility: [
+    "The split letters are hidden and a visually hidden copy of the label is read instead, so screen readers hear whole words.",
+  ],
+  useWhen: [
+    "A clean, typographic brand wants buttons with a crisp, mechanical response and no colour change.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

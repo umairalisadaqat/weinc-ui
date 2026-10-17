@@ -1,0 +1,31 @@
+export default {
+  slug: "ceramics-cards-revealed-through-falling-slats",
+  category: "galleries",
+  name: "Ceramics Cards Revealed Through Falling Slats",
+  keyword: "css image reveal animation",
+  tags: ["slat reveal", "staggered", "product cards", "pottery", "hover reveal"],
+  height: 760,
+  section: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Every card shows its photo and caption from the start, with no falling strips.",
+  perf: "Five translated strips per card share one cached photo, so a reveal moves five small layers and repaints nothing.",
+  intro: "Three pottery cards on terracotta that rest as flat glaze swatches with the range name. Hover or focus one and the photo falls into the card in five vertical strips, each a beat after the last, before a caption fades up with the price. Phones show every piece revealed.",
+  customize: [
+    "Set `--w8cer-step` for the gap between strips and `--w8cer-time` for how long each fall takes.",
+    "Give each card its own resting colour through the inline `background` on `.w8cer-card`.",
+    "Change `SLATS` in the React version for more or fewer strips; the vanilla file uses five fixed `w8cer-s` classes.",
+  ],
+  accessibility: [
+    "Only the first strip's photo has alt text, so the picture is announced once rather than five times.",
+    "Cards are links with a two-tone focus ring, and focus plays the same reveal as hover.",
+  ],
+  useWhen: [
+    "A small product range where a colour swatch says something on its own before the photo arrives.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

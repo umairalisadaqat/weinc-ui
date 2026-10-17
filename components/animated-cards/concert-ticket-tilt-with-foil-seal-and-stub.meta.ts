@@ -1,0 +1,31 @@
+export default {
+  slug: "concert-ticket-tilt-with-foil-seal-and-stub",
+  category: "animated-cards",
+  name: "Concert Ticket Tilt With Foil Seal and Stub",
+  keyword: "3d ticket card tilt hover",
+  tags: ["ticket", "tilt card", "foil", "event", "perspective"],
+  height: 611,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The ticket rests at one small fixed angle with the gold seal, stub and seat number in place and no moving shine.",
+  perf: "While the ticket moves, each frame writes three transforms and one opacity; the loop ends once it settles and stays off while the section is out of view.",
+  intro: "A paper concert ticket with a torn-off stub, cut notches and a round gold foil seal that stands proud of the paper. As the ticket tips toward the pointer, a bright band slides across the foil while a softer light crosses the paper, which is what sells the metal. Fits a booking confirmation, an order page or an event landing section.",
+  customize: [
+    "Set `--w4tkt-bg` for the night blue, and give `.w4tkt-notch` the colour right behind the ticket so the two notches keep looking cut out.",
+    "Change the `translateZ(46px)` on `.w4tkt-seal` for how far the foil seal lifts off the paper.",
+    "Edit the venue, act, date and seat spans; the stub width is the `112px` column in `.w4tkt-card`.",
+  ],
+  accessibility: [
+    "The ticket is a single link whose aria-label reads the act, venue, date, door time and seat in order, with the printed layout hidden from screen readers.",
+    "With a keyboard the ticket tips to a set angle on focus and gets a light outline; a tap on a phone tilts it briefly toward the finger.",
+  ],
+  useWhen: [
+    "Confirmation or account pages for gigs, theatre or talks, where seeing the ticket as an object reassures people they have it.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

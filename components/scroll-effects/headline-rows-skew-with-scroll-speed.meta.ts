@@ -1,0 +1,31 @@
+export default {
+  slug: "headline-rows-skew-with-scroll-speed",
+  category: "scroll-effects",
+  name: "Headline Rows Skew With Scroll Speed",
+  keyword: "skew on scroll",
+  tags: ["skew on scroll", "scroll velocity", "big typography", "class schedule"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The class names stand upright and the list scrolls normally, with no slant and no automatic movement.",
+  perf: "A frame loop writes one skewX per row only while scrolling or settling, and stops when every row is upright or the box is off screen.",
+  intro: "A terracotta class timetable for a dance hall set in oversized serif rows. Scrolling slants each row sideways like a dancer leaning into a turn, harder the faster you go, and rows lower in the list catch up a beat later so the slant travels down the page as a wave before everything stands upright again. The box drifts by itself until someone scrolls it.",
+  customize: [
+    "Change `SKEW` for how much slant each pixel of speed gives, and `MAX` for the limit.",
+    "Raise `LAG` to make lower rows trail further behind, or set it to 0 so every row leans together.",
+    "Recolour with `--w3skh-bg`, `--w3skh-ink` and `--w3skh-line`, and set `IDLE` to 0 to drop the demo.",
+  ],
+  accessibility: [
+    "Every class is a real link in a list under a hidden heading, with an italic name and an outline on keyboard focus.",
+    "The box takes focus so it can be scrolled with the keyboard, and pressing any key stops the self-scroll.",
+  ],
+  useWhen: [
+    "A timetable, menu or line-up of short names where big type is the design and a little momentum adds character.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

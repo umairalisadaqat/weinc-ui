@@ -1,0 +1,31 @@
+export default {
+  slug: "list-rows-that-turn-into-marquee-bands-on-hover",
+  category: "marquees",
+  name: "List Rows That Turn Into Marquee Bands On Hover",
+  keyword: "marquee hover effect css",
+  tags: ["hover marquee", "list links", "exhibitions", "gallery", "marquee"],
+  height: 560,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "A lit row simply turns slate blue with its title and dates shown still, with no slide or loop.",
+  perf: "Each band only runs its loop while its row is lit; the rest sit paused, and the idle demo is a slow class swap.",
+  intro: "A list of exhibitions at a harbour gallery reads as plain rows of title, subject and dates. Point at a row or tab to it and a slate blue band slides up from under the line and starts looping that show's title and dates. Until someone arrives the rows light one after another. Use it for event lists, project indexes or menus of services.",
+  customize: [
+    "Change `--w3row-band` for the band colour and `--w3row-speed` for how fast its words travel.",
+    "Raise `IDLE_STEP` to hold each row longer during the idle demo.",
+    "Edit `shows` (or the list items in HTML); the band text is built from each title and date.",
+  ],
+  accessibility: [
+    "Every row is a single link whose name is its visible text, and the band inside it is aria-hidden so the title is not read twice.",
+    "Keyboard focus lights a row the same way hover does, with an orange outline around it.",
+  ],
+  useWhen: [
+    "A short index of shows, projects or courses should feel lively without moving when nobody is looking at it.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

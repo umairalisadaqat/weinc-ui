@@ -1,0 +1,31 @@
+export default {
+  slug: "scroll-velocity-marquee-that-speeds-and-reverses",
+  category: "marquees",
+  name: "Scroll Velocity Marquee That Speeds And Reverses",
+  keyword: "scroll velocity marquee",
+  tags: ["scroll velocity", "marquee", "big type", "architecture", "scroll effect"],
+  height: 620,
+  section: true,
+  collection: "css-marquee",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "One band of material names sits still and wrapped, and scrolling only moves the page.",
+  perf: "Scrolling only changes the playback rate of existing CSS animations, and the short frame loop ends once the speed settles.",
+  intro: "Two bands of material names for a small architecture practice run at an easy pace on graphite, then rush ahead when you scroll down and swing backwards when you scroll up, easing back to rest when the scrolling stops. It reads the box's own scroll, so it works inside a preview frame. Suits a portfolio or studio page that wants motion tied to the reader.",
+  customize: [
+    "Raise `BOOST` for a stronger kick from each scroll, or lower `MAX` to cap how fast the words can run.",
+    "Change `--w3vel-speed` (or `SPEED`) for the resting pace.",
+    "To use the page scroll, drop `--w3vel-h` and the overflow rule, then listen on window and read scrollY as the comment says.",
+  ],
+  accessibility: [
+    "Both bands are aria-hidden because the paragraphs name the same materials, and the pause button freezes them with aria-pressed.",
+    "With reduced motion the scroll listener never starts, so the words cannot speed up.",
+  ],
+  useWhen: [
+    "A long scrolling page needs a moment that answers the reader's own movement.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

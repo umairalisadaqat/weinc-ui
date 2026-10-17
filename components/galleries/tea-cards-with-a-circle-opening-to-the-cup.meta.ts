@@ -1,0 +1,31 @@
+export default {
+  slug: "tea-cards-with-a-circle-opening-to-the-cup",
+  category: "galleries",
+  name: "Tea Cards With A Circle Opening To The Cup",
+  keyword: "circle image reveal hover",
+  tags: ["circle reveal", "before and after", "product card", "tea", "toggle"],
+  height: 700,
+  section: true,
+  interactive: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The cup photo replaces the leaf at once when the button is pressed, with no growing circle.",
+  perf: "One scaled circle and one counter-scaled photo per card, so the reveal stays a pair of transforms.",
+  intro: "Three loose-leaf tea cards on warm sand, each showing the dry leaf at rest. Hover a card and a circle opens from its centre to show the same tea brewed, while a corner tag rolls from Dry leaf to In the cup. A small dark button on each card makes the same swap for taps and keys.",
+  customize: [
+    "Set `--w8tea-time` to change how long the circle takes to open.",
+    "The circle starts at `scale(.08)` and the photo inside at `scale(12.5)`; keep the two values reciprocal if you change one.",
+    "Recolour the button and focus ring through `--w8tea-ink`.",
+  ],
+  accessibility: [
+    "The button announces its state through aria-pressed and its label switches between Show cup and Show leaf.",
+  ],
+  useWhen: [
+    "Products that change form in use: leaf and brew, raw and cooked, flat pack and assembled.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

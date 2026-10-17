@@ -1,0 +1,31 @@
+export default {
+  slug: "ink-editorial-section-with-grain-and-breathing-vignette",
+  category: "backgrounds",
+  name: "Ink Editorial Section With Grain and Breathing Vignette",
+  keyword: "grain texture background css",
+  tags: ["film grain", "vignette", "editorial", "dark section", "noise texture"],
+  height: 654,
+  section: true,
+  collection: "animated-background-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Grain, warm light and dark corners all remain as a single printed-looking frame, with no jumping or breathing.",
+  perf: "The grain layer jumps between eight fixed offsets and two soft gradients fade and drift slowly, all on transform and opacity, paused while off screen.",
+  intro: "A near-black magazine section with warm, pale grain that reads like ink on uncoated stock, a lamp glow behind the headline, and a vignette that slowly deepens and lifts around the edges as if someone were breathing on the page. No photo is needed; the texture carries the mood behind a serif headline, byline and a two-column opening.",
+  customize: [
+    "Turn `--w4ink-grain` up toward `.3` for a rougher print, or down for a hint of texture.",
+    "Set `--w4ink-lamp` (r, g, b) to move the glow and the italic accent toward another colour, such as a cool blue.",
+    "Lengthen the `9s` on `.w4ink-vig` and the `11s` on `.w4ink-lamp` if the breathing feels too noticeable.",
+  ],
+  accessibility: [
+    "The body text sits in the centre where the vignette is clear, so contrast stays high through the whole breathing cycle.",
+    "The link has a visible underline at rest and a clear outline on keyboard focus.",
+  ],
+  useWhen: [
+    "Opening a long read, an interview or a journal issue where the page should feel printed and quiet.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

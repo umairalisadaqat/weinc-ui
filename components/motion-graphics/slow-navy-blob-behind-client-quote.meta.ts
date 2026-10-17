@@ -1,0 +1,30 @@
+export default {
+  slug: "slow-navy-blob-behind-client-quote",
+  category: "motion-graphics",
+  name: "Slow Navy Blob Behind Client Quote",
+  keyword: "blob shape animation",
+  tags: ["blob", "testimonial", "quote", "navy", "svg shapes"],
+  height: 735,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The quote sits on a still pair of navy shapes, exactly as it reads mid-loop.",
+  perf: "Two large paths stretched to the quote box turn by a few degrees over 23 and 30 seconds, which changes very few pixels per frame.",
+  intro: "A single client quote for a joinery workshop, set in serif type on deep navy, with a wide blob stretched behind it that leans and swells over half a minute. Both tones sit only a step above the page colour, so the cream quote keeps the same strong contrast in every frame. The shape stretches with the text box on phones.",
+  customize: [
+    "Keep `--m2quo-t1` and `--m2quo-t2` within a shade or two of `--m2quo-bg`; brighter tones will start to compete with the quote.",
+    "Slow the lean further by raising 30s and 23s on `.m2quo-b1` and `.m2quo-b2`.",
+    "Swap the quote, name and project line; the blob resizes with the text because the SVG uses preserveAspectRatio none.",
+  ],
+  accessibility: [
+    "The quote is a blockquote inside a figure with a figcaption naming the client, under a real section heading.",
+  ],
+  useWhen: [
+    "A portfolio or trade site shows one strong testimonial and wants it to feel set apart from the page.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

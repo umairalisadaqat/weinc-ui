@@ -1,0 +1,31 @@
+export default {
+  slug: "walking-routes-with-a-postcard-pair-fanning-out",
+  category: "galleries",
+  name: "Walking Routes With A Postcard Pair",
+  keyword: "hover image reveal list",
+  tags: ["postcard", "fan out", "hover list", "travel", "stone"],
+  height: 640,
+  section: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Each route shows a small tilted postcard photo beside its name and no cards fan out.",
+  perf: "Two cards and one photo per row change transform and opacity only; the idle timer stops off screen.",
+  intro: "A walking guide's weekend routes in big serif on pale stone. Resting on a route, or tabbing to it, fans out two cards from behind the row: a cream note with the route number and time, then a white-bordered postcard whose photo settles into its frame. Phones show the postcard as a small tilted thumbnail.",
+  customize: [
+    "Set `--w8wlk-card` to size both cards together.",
+    "Change `--w8wlk-tilt` for a steeper or flatter starting angle before the pair fans out.",
+    "Edit the `walks` array to change names, distances and photos in one place.",
+  ],
+  accessibility: [
+    "The fanned cards repeat what the row says, so they are hidden from screen readers; the phone thumbnail has a full description.",
+    "Focus on a row fans the cards exactly as hover does, with a moss outline around the row.",
+  ],
+  useWhen: [
+    "Guides, itineraries or event lists where a picture and one or two facts help someone pick.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

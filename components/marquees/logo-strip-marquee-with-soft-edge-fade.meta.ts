@@ -1,0 +1,31 @@
+export default {
+  slug: "logo-strip-marquee-with-soft-edge-fade",
+  category: "marquees",
+  name: "Logo Strip Marquee With Soft Edge Fade",
+  keyword: "logo strip marquee css",
+  tags: ["logo strip", "marquee", "client logos", "edge fade", "social proof"],
+  height: 484,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The row stops and the client names wrap onto centred lines with no fade at the edges.",
+  perf: "One transform keyframe on one track, paused by an observer whenever the strip leaves the screen.",
+  intro: "A quiet row of client wordmarks for a coastal accounting practice drifts left on white, and the ends dissolve into the page through a static mask so no name is ever cut by a hard edge. Each mark is a small inline SVG next to a name in its own type style. It suits the band just under a hero where a firm lists who it serves.",
+  customize: [
+    "Change `--w3lgo-speed` (or `SPEED` in React) to slow the loop; a longer time reads calmer.",
+    "Widen `--w3lgo-fade` from 14% to soften the edges further on wide screens.",
+    "Swap the entries in `clients` for your own names and pick a mark per row from square, circle, ring, tri, bars or leaf.",
+  ],
+  accessibility: [
+    "The cloned half of the track is aria-hidden, so a screen reader hears each client once, and the labelled pause button reports its state through aria-pressed.",
+    "Hovering or tabbing into the row holds it still.",
+  ],
+  useWhen: [
+    "A service business wants to show the kinds of clients it keeps without building a grid of badges.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

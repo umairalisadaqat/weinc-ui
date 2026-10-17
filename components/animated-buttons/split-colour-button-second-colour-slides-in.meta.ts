@@ -1,0 +1,32 @@
+export default {
+  slug: "split-colour-button-second-colour-slides-in",
+  category: "animated-buttons",
+  name: "Split Colour Button With a Sliding Second Colour",
+  keyword: "button color slide hover effect",
+  title: "",
+  description: "",
+  intro: "Three booking buttons for a wine bar on a bone background. On hover or keyboard focus a second colour slides in behind the label, from the left, from below or from the right, and the label changes colour exactly where the edge passes, so for a moment the word is split in two tones. The trick is a masked copy of the label moving against its own mask.",
+  useWhen: [
+    "A row of calls to action that should feel crafted without adding icons or arrows.",
+    "Restaurant, hotel or shop pages where a solid, outline and soft button sit together.",
+  ],
+  customize: [
+    "Pick the incoming colour with `--w7spl-wine` and the slide length with `--w7spl-dur`.",
+    "Change the direction by swapping the `translateX` or `translateY` pair on `.w7spl-m` and its inner `.w7spl-t`; the two values must always be opposite.",
+    "Edit both copies of the label when changing button text.",
+  ],
+  accessibility: [
+    "The coloured copy of each label is hidden from screen readers, so every link is announced once.",
+    "Focus shows the same colour change plus an outline; reduced motion swaps colours instantly.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["button hover", "color wipe", "split text color", "css transition", "call to action"],
+  height: 330,
+  section: true,
+  collection: "hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Hover and focus switch each button to its second colour at once, with no slide and no demo.",
+  perf: "Two transforms per button on hover; a short timer only runs the demo until someone interacts.",
+} satisfies UiMeta;

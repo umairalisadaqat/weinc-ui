@@ -1,0 +1,31 @@
+export default {
+  slug: "free-scroll-plant-strip-that-coasts-then-springs",
+  category: "galleries",
+  name: "Free Scroll Plant Strip That Coasts Then Springs",
+  keyword: "free scroll slider",
+  tags: ["carousel slider", "free scroll", "spring", "momentum", "product strip"],
+  height: 760,
+  section: true,
+  interactive: true,
+  collection: "carousel-slider",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The strip follows a drag one to one and then sits on the nearest plant at once; buttons and keys jump with no spring.",
+  perf: "A single translate3d plus an opacity class swap per frame, and the loop ends as soon as the spring comes to rest.",
+  intro: "A deep green nursery strip of narrow plant cards. Low friction lets a flick coast a long way, and when it slows a soft spring carries it a little past the nearest card and back. The card closest to the left edge is lit while the rest dim, and its name shows beside the arrows. Good for a long, loose product row.",
+  customize: [
+    "Set `DAMP` near 0.85 for a bouncier landing, or near 0.7 to settle with no overshoot at all.",
+    "Lower `FRICTION` to 0.94 if a flick travels further than you want.",
+    "Change `--w1fre-card` for wider cards and `--w1fre-leaf` for the accent on prices and focus rings.",
+  ],
+  accessibility: [
+    "The dimmed cards stay above 4.5:1 for their names, a focused card lights fully, and the arrow buttons and arrow keys each move exactly one plant.",
+  ],
+  useWhen: [
+    "A shop has a long row of similar items that people skim rather than read one by one.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

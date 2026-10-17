@@ -1,0 +1,30 @@
+export default {
+  slug: "hero-corner-with-two-tinted-css-blobs",
+  category: "motion-graphics",
+  name: "Hero Corner With Two Tinted CSS Blobs",
+  keyword: "blob animation css",
+  tags: ["blob", "hero section", "border radius", "css only", "dark green"],
+  height: 600,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Both tinted shapes and the gold outline hold still in the top corner of the hero.",
+  perf: "Three plain elements with fixed corner radii rotate and scale; the radii themselves are never animated.",
+  intro: "A forest-green hero for a garden designer, with two tinted blobs and a fine gold outline half tucked off the top right corner. The shapes are ordinary elements given eight unequal corner radii, then turned at three different speeds so the cluster seems to reshape. On narrow screens the cluster grows and slides further off the edge.",
+  customize: [
+    "Set the tints with `--m2hro-t1` and `--m2hro-t2`; keep both close to `--m2hro-bg` so the headline stays clear where they overlap.",
+    "Change the silhouette by editing the eight `border-radius` values on `.m2hro-b1` and `.m2hro-b2`.",
+    "Move the cluster by changing `right`, `top` and `width` on `.m2hro-corner`.",
+  ],
+  accessibility: [
+    "The corner shapes are aria-hidden and never take pointer events, and the cream text keeps strong contrast over both tints.",
+  ],
+  useWhen: [
+    "A service business hero needs a little movement in an empty corner but no photo or illustration.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

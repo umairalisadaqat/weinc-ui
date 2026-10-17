@@ -1,0 +1,31 @@
+export default {
+  slug: "full-bleed-hero-slider-with-parallax-photos",
+  category: "galleries",
+  name: "Full Bleed Hero Slider With Parallax Photos",
+  keyword: "hero slider",
+  tags: ["carousel slider", "hero slider", "parallax", "full width slider", "drag slider"],
+  height: 640,
+  section: true,
+  interactive: true,
+  collection: "carousel-slider",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Photos sit still inside their frames with no parallax, and each slide change is an instant jump rather than a glide.",
+  perf: "Two transforms per slide in view are written each frame of a drag or settle; at rest the script does nothing.",
+  intro: "A full-width hero for an architecture practice, one house per slide with its street and a project link over a soft shade. As you drag, each photo travels more slowly than its frame, so the image seems to sit behind a window passing over it. Release with speed and it carries on to the next house. Built for a homepage opener.",
+  customize: [
+    "Set `DEPTH` between 0.2 and 0.5; higher values make the photo lag further behind its frame.",
+    "Change `--w1her-h` for the slider height and `--w1her-shade` for how dark the caption shade gets.",
+    "If you raise `DEPTH` past 0.4, widen `.w1her-img` (it is 144% wide) so the photo edge never shows.",
+  ],
+  accessibility: [
+    "Each slide's link can be reached by Tab and brings its slide into view, and the slide counter beside the buttons is mirrored in a polite announcement after each button or arrow key move.",
+  ],
+  useWhen: [
+    "A studio, hotel or estate agent opens the homepage with a few large photographs that each lead to their own page.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

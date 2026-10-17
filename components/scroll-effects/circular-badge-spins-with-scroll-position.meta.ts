@@ -1,0 +1,32 @@
+export default {
+  slug: "circular-badge-spins-with-scroll-position",
+  category: "scroll-effects",
+  name: "Circular Badge That Spins With Scroll",
+  keyword: "rotating text badge on scroll",
+  title: "",
+  description: "",
+  intro: "A round espresso-coloured stamp with lettering set around its edge sits beside a coffee roaster's bean list. Its ring is tied directly to scroll position, so it turns forward as you read down and backward as you return, while the bean in the middle stays upright. On wide screens it rides along in a sticky side column; on phones it sits above the headline.",
+  useWhen: [
+    "A shop or menu page that wants one small moving mark without animating the content itself.",
+    "A brand with a stamp, seal or roundel that already appears on its packaging.",
+  ],
+  customize: [
+    "Set how far it turns over the full scroll with `--w7bdg-turns` and its width with `--w7bdg-size`.",
+    "Rewrite the ring text inside `textPath`; add or remove words until the separator meets the start.",
+    "Recolour the disc, lettering and bean with `--w7bdg-ink`, `--w7bdg-bg` and `--w7bdg-rust`.",
+  ],
+  accessibility: [
+    "The badge is decorative and hidden from screen readers; its words are repeated in the visible copy.",
+    "Reduced motion fixes the ring at a slight angle and stops the demo scroll.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["rotating badge", "circular text", "scroll timeline", "svg textpath", "sticky sidebar"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "css",
+  support: "Chrome, Edge and Safari 26+; script fallback elsewhere",
+  reducedMotion: "The badge rests at a fixed, slightly turned angle and does not move with scroll.",
+  perf: "A single rotate on one small SVG, run by the scroll timeline; the fallback updates it at most once per frame.",
+} satisfies UiMeta;

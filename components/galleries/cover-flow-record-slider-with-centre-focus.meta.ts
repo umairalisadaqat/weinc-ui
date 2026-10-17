@@ -1,0 +1,31 @@
+export default {
+  slug: "cover-flow-record-slider-with-centre-focus",
+  category: "galleries",
+  name: "Cover Flow Record Slider With Centre Focus",
+  keyword: "cover flow slider",
+  tags: ["carousel slider", "cover flow", "3d carousel", "drag slider", "album covers"],
+  height: 625,
+  section: true,
+  interactive: true,
+  collection: "carousel-slider",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Sleeves keep their angled cover flow layout, but buttons and keys switch the centre sleeve at once and a drag lands without any glide.",
+  perf: "Each frame of a drag writes one transform per sleeve, seven in this demo, all on composited layers, and nothing runs at rest.",
+  intro: "Square record sleeves for a small label sit in a row on a navy stage. The one in the middle faces you at full size, and the others turn away on rotateY, shrink and sink back the further they are from centre. Drag to spin through them with momentum; the nearest sleeve always lands dead centre. Fits album, book or poster ranges.",
+  customize: [
+    "Change `TURN` to set how far the side sleeves angle away, from 30 for subtle to 60 for steep.",
+    "Size the sleeves with `--w1cov-size` and soften or sharpen the 3D with `--w1cov-depth`.",
+    "Each sleeve's colours live in the `.w1cov-c1` to `.w1cov-c7` rules as `--bg` and `--fg`.",
+  ],
+  accessibility: [
+    "The title of the centred record is printed between the arrow buttons, so the current slide is clear without relying on the 3D view.",
+  ],
+  useWhen: [
+    "A label, publisher or print shop wants one featured item in focus with its neighbours visible on either side.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

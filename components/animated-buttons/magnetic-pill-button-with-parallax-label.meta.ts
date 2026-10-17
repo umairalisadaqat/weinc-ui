@@ -1,0 +1,30 @@
+export default {
+  slug: "magnetic-pill-button-with-parallax-label",
+  category: "animated-buttons",
+  name: "Magnetic Pill Button With Parallax Label",
+  keyword: "magnetic button css",
+  tags: ["magnetic button", "parallax", "call to action", "hover effect", "pill button"],
+  height: 620,
+  section: true,
+  collection: "hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The pill stays fixed in place and only its fill colour changes on hover or focus.",
+  perf: "One small frame loop writes two transforms and stops whenever the section scrolls out of view.",
+  intro: "A cream pill on a dark wine-bar section leans toward the mouse once it comes within reach, and the words inside travel a little further than the pill itself, so the label seems to float above it. Until a mouse arrives the pill drifts in a slow loop. Use it for the one booking or signup action on a quiet page.",
+  customize: [
+    "Raise `PULL` for a stronger lean and widen the gap to `LABEL_PULL` for more depth between label and pill.",
+    "Set `REACH` to the distance in pixels at which the pull switches on.",
+    "Recolour through `--w3mag-bg`, `--w3mag-pill` and `--w3mag-fill` in the HTML version.",
+  ],
+  accessibility: [
+    "It is an ordinary link, so keyboard focus shows the gold fill plus a cream outline, and touch screens get a plain tappable pill with no pull.",
+  ],
+  useWhen: [
+    "A restaurant, studio or event page has a single reservation action that deserves a little life.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,30 @@
+export default {
+  slug: "balanced-pebble-cluster-beside-opening-hours",
+  category: "motion-graphics",
+  name: "Balanced Pebble Cluster Beside Opening Hours",
+  keyword: "morphing shapes",
+  tags: ["pebbles", "blob shapes", "spa", "opening hours", "sand"],
+  height: 645,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The stack of stones and the two loose pebbles stand still over their soft shadow.",
+  perf: "Six small gradient paths rock by a few degrees and one shadow ellipse fades; all of it pauses off screen.",
+  intro: "A bathhouse hours card with a small stack of stones beside the timetable. Each stone is a squashed blob with its own lit gradient, and each rocks a degree or two on a different cycle, so the pile looks balanced but alive while the ground shadow softly fades. On phones the stack shrinks and sits above the hours.",
+  customize: [
+    "Recolour the stones through the `m2peb-g1` to `m2peb-g3` gradients, or point a stone at a different gradient with its `fill`.",
+    "Keep the rocking subtle: the angles in `@keyframes m2peb-r` stay under two degrees so the stones never look like they will fall.",
+    "Edit the timetable rows in the table body; the times use tabular figures so they line up.",
+  ],
+  accessibility: [
+    "Hours are a real table with row headers and a caption, and the stones are aria-hidden.",
+  ],
+  useWhen: [
+    "A spa, yoga studio or tea room wants a calm moving detail next to plain practical information.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

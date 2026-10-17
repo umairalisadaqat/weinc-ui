@@ -1,0 +1,32 @@
+export default {
+  slug: "ferry-departure-board-rows-scramble-into-place",
+  category: "text-effects",
+  name: "Ferry Departure Board Rows Scramble Into Place",
+  keyword: "departure board text animation",
+  tags: ["text scramble effect", "departure board", "split flap style", "timetable"],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "text-reveal-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The board shows its four sailings as still tiles, and the button swaps in later sailings at once without any shuffling.",
+  perf: "Only tiles whose letter changes are rewritten, for under a second per update, and the timer stops when the board leaves the screen.",
+  intro: "A navy timetable board for a small ferry operator where every letter sits on its own fixed tile. When the board appears, and again each time it moves on to later sailings, the tiles that need a new letter run through noise and land left to right, row after row. Hovering a row flips it again. Use it for timetables, opening hours or an events line-up.",
+  customize: [
+    "Edit `SAILINGS` for the rows and `WIDTHS` for how many tiles each column holds; longer names need a wider column.",
+    "Change `ADVANCE` to set how often the board moves on by itself, or remove the interval to update only from the button.",
+    "Retune the tiles with `--w3dbd-tile`, `--w3dbd-ink` and `--w3dbd-cell` in the HTML version.",
+  ],
+  accessibility: [
+    "It is a real table with column headers; each cell holds its value as visually hidden text, and the tiles are aria-hidden.",
+    "The Later sailings button works from the keyboard and stops the automatic updates once used.",
+  ],
+  useWhen: [
+    "A transport, venue or cinema page that lists a handful of times and wants the board itself to be the visual.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "opening-hours-ticker-with-full-timetable",
+  category: "marquees",
+  name: "Opening Hours Ticker With Full Timetable",
+  keyword: "ticker css",
+  tags: ["ticker", "opening hours", "announcement bar", "cafe", "marquee"],
+  height: 603,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The moving bar is removed and the timetable card below carries every day and time on its own.",
+  perf: "One monospace text strip loops on a transform and stops through an observer when scrolled away.",
+  intro: "A thin navy bar runs the week's hours for a harbour coffee shop in gold and pale blue monospace, while a proper timetable card sits right below it with every day as a definition list. The ticker is built from that list, so the two can never disagree. A square button at the right end stops the bar. Good for cafes, shops and clinics whose hours change through the week.",
+  customize: [
+    "Edit the `hours` array in React or the rows of `.w3hrs-list` in HTML; the strip rebuilds from them.",
+    "Change `--w3hrs-speed` for the loop time and `--w3hrs-h` for the bar height.",
+    "Swap `--w3hrs-gold` for your accent colour on the day names and labels.",
+  ],
+  accessibility: [
+    "The moving bar is aria-hidden because the timetable states the same facts as a real dl list, so nobody has to catch a day as it slides past.",
+    "The icon button has a label that changes between pause and play and an aria-pressed state.",
+  ],
+  useWhen: [
+    "Hours are the thing people most often look for and you want them visible at the very top.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

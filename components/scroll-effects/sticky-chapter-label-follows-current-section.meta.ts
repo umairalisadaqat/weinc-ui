@@ -1,0 +1,32 @@
+export default {
+  slug: "sticky-chapter-label-follows-current-section",
+  category: "scroll-effects",
+  name: "Sticky Chapter Label That Follows the Section",
+  keyword: "sticky section label on scroll",
+  title: "",
+  description: "",
+  intro: "A vineyard's year told in four chapters on a cool, slate-on-white page. A slim bar stays pinned to the top, and its chapter name rolls up to the next one as each new section passes a line just under the bar, while four short ticks fill in to show how far through the year you are. It works on phones with the ticks tucked away.",
+  useWhen: [
+    "A long story, guide or case study split into a handful of named parts.",
+    "Seasonal or step-by-step content where readers like to know which part they are in.",
+  ],
+  customize: [
+    "Rename the chapters inside `.w7chp-roll`, keeping one span per `.w7chp-sec` in the same order.",
+    "Move the hand-over line with `rootMargin` in the script; `-30% 0px -60% 0px` watches a band near the top.",
+    "Recolour the active label and ticks with `--w7chp-vine`.",
+  ],
+  accessibility: [
+    "Every chapter has its own `h2`; the rolling label is a visual duplicate hidden from screen readers.",
+    "Reduced motion swaps the label instantly with no roll, and the demo scroll stays off.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["sticky header", "section label", "scrollspy", "chapter navigation", "intersection observer"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The chapter name still changes with each section, but it switches in place without rolling.",
+  perf: "One observer reports when a chapter crosses the line; the label moves with a single transform transition.",
+} satisfies UiMeta;

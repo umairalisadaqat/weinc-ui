@@ -1,0 +1,32 @@
+export default {
+  slug: "blueprint-compass-marks-trailing-the-cursor",
+  category: "cursors",
+  name: "Blueprint Compass Marks Trailing the Cursor",
+  keyword: "custom cursor trail for architects",
+  title: "",
+  description: "",
+  intro: "An architecture practice's hero laid out like a drawing sheet: blueprint blue, a fine grid, a border and a title block in the corner. As the pointer travels it stamps small compass roses, each turned to face the direction of travel, which swing into place, hold, then fade like pencil marks rubbed out. A dozen marks are reused in turn, and a slow survey path draws them before anyone arrives.",
+  useWhen: [
+    "An architect, surveyor or engineering studio that wants its hero to feel like a working drawing.",
+    "A page about maps, routes or site visits where direction matters.",
+  ],
+  customize: [
+    "Recolour the sheet with `--w7cmp-paper` and the lines with `--w7cmp-line`; `--w7cmp-cell` sets the grid.",
+    "Space marks with `GAP` and keep them on the sheet longer with `LIFE`.",
+    "Redraw the mark by editing the single SVG inside `.w7cmp-marks`; the script clones whatever is there.",
+  ],
+  accessibility: [
+    "Marks are decorative, hidden from screen readers and never take clicks; the system pointer is left as it is.",
+    "Reduced motion leaves one large still compass rose near the top right.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["cursor trail", "blueprint", "architecture hero", "compass rose", "svg animation"],
+  height: 560,
+  section: true,
+  collection: "cursor-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "A single compass rose rests near the top right of the sheet and nothing follows the pointer.",
+  perf: "Twelve cloned SVGs animated with transform and opacity; the loop only checks distance and pauses off screen.",
+} satisfies UiMeta;

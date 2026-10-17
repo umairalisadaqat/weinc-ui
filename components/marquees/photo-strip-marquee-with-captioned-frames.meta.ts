@@ -1,0 +1,31 @@
+export default {
+  slug: "photo-strip-marquee-with-captioned-frames",
+  category: "marquees",
+  name: "Photo Strip Marquee With Captioned Frames",
+  keyword: "image marquee css",
+  tags: ["photo strip", "gallery", "marquee", "captions", "nursery"],
+  height: 708,
+  section: true,
+  collection: "css-marquee",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Photos stand still in a swipeable row that snaps frame by frame, each with its caption.",
+  perf: "Five photos loaded up front with fixed aspect boxes; the belt is one transform, halted off screen.",
+  intro: "Portrait photos from a plant nursery glide across a deep forest green band, every other frame dropped a little lower so the belt has a gentle rhythm. Each frame carries a short caption and a running number. Pointer hover holds the belt, and a light pill button pauses it for good. Use it for a gallery strip on a garden centre, studio or venue page.",
+  customize: [
+    "Change `--w3pho-drop` to make the staggered frames sit higher or lower, or set it to 0 for a straight line.",
+    "Widen frames with `--w3pho-w` and keep the 3 by 4 aspect box so nothing jumps while photos load.",
+    "Replace the `photos` entries with your own images, matching each alt text to what the photo shows.",
+  ],
+  accessibility: [
+    "Only the first set of photos carries alt text; the repeated set has empty alt and aria-hidden so a screen reader describes each photo once.",
+    "The pause button uses aria-pressed and a visible focus outline on the dark green.",
+  ],
+  useWhen: [
+    "You have a handful of strong photos and want them to feel like a walk past rather than a grid.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

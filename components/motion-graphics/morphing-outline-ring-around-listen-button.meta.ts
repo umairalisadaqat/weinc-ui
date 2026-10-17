@@ -1,0 +1,30 @@
+export default {
+  slug: "morphing-outline-ring-around-listen-button",
+  category: "motion-graphics",
+  name: "Morphing Outline Ring Around Listen Button",
+  keyword: "svg morph animation",
+  tags: ["blob outline", "podcast", "play button", "svg stroke", "graphite"],
+  height: 520,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The three outlines sit still at slightly different sizes, so the ring still reads as hand drawn.",
+  perf: "Three thin stroked paths rotate and scale; the play button only scales on hover.",
+  intro: "A graphite podcast card where a round gold play button is circled by three thin blob outlines in gold, sage and bone. They spin in opposite directions at unequal speeds and one also squeezes slightly, so the ring around the button looks like it is being redrawn. On phones the button and ring sit above the episode text.",
+  customize: [
+    "Recolour each line with `--m2rng-l1`, `--m2rng-l2` and `--m2rng-l3`.",
+    "Thicken the ring by raising `stroke-width` on `.m2rng-o`; values from 0.8 to 1.6 keep it delicate at this size.",
+    "Point the button at your audio page or player and update its `aria-label` with the episode title.",
+  ],
+  accessibility: [
+    "The icon-only play link has an aria-label naming the episode, a visible focus outline and a 88 pixel target.",
+  ],
+  useWhen: [
+    "An episode page or audio feature wants one obvious action with a little life around it.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

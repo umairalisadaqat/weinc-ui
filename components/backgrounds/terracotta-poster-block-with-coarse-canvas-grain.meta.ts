@@ -1,0 +1,30 @@
+export default {
+  slug: "terracotta-poster-block-with-coarse-canvas-grain",
+  category: "backgrounds",
+  name: "Terracotta Poster Block With Coarse Canvas Grain",
+  keyword: "grainy background css",
+  tags: ["grain", "poster", "canvas texture", "risograph look", "event block"],
+  height: 699,
+  section: true,
+  collection: "animated-background-css",
+  tech: "canvas",
+  support: "All current browsers; SVG grain if canvas is blocked",
+  reducedMotion: "The clay colour, sun, arch and coarse specks all stay, frozen in one position.",
+  perf: "The canvas draws one small tile a single time on load; after that only a CSS loop jumps that tile between five offsets, paused off screen.",
+  intro: "A flat poster block in clay, ochre and deep brown with chunky two-pixel specks, the kind of texture a printed screen poster has. A short script paints one grain tile on a canvas when the block loads, then CSS jumps it around on a fast stepped loop. If canvas is blocked, a finer SVG noise tile takes its place, so the poster never looks bare.",
+  customize: [
+    "Set `CLUMP` to `1` for fine grain or `3` for a very rough print, and `SPECKS` for how crowded the specks are.",
+    "Change `--w4ter-clay`, plus the sun `#e7a34d` and arch `#7c3119`, for a different ink set; keep cream text on a colour dark enough for 4.5 to 1 contrast.",
+    "Raise `--w4ter-grain` toward `.8` for a heavier texture.",
+  ],
+  accessibility: [
+    "The sun and arch shapes are decoration hidden from screen readers; the dates, hours and address are a real list.",
+  ],
+  useWhen: [
+    "Promoting an open day, market or exhibition where the section should look like a printed poster rather than a web banner.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

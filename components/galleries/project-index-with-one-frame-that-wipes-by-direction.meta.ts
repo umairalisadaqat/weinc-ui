@@ -1,0 +1,31 @@
+export default {
+  slug: "project-index-with-one-frame-that-wipes-by-direction",
+  category: "galleries",
+  name: "Project Index With Direction Aware Frame",
+  keyword: "hover list image preview",
+  tags: ["project list", "image preview", "direction aware", "portfolio", "dark"],
+  height: 620,
+  section: true,
+  collection: "image-hover-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The frame changes photo at once with no slide, and the idle cycling is off.",
+  perf: "One shared frame of four photos; each switch moves two of them with transform and leaves the rest untouched.",
+  intro: "An architecture studio index on graphite: a numbered list of buildings beside one tall frame. Moving down the list pushes the next photo up from below, moving up brings it down from above, so the frame seems to scroll with your eye. On phones the frame goes away and each row carries its own small photo.",
+  customize: [
+    "Change `PUSH` in the script for how far the outgoing photo drifts under the new one.",
+    "Set `--w8arc-frame` to widen the frame column and `--w8arc-time` for the slide length.",
+    "Swap `--w8arc-accent` to recolour the label and focus ring.",
+  ],
+  accessibility: [
+    "Keyboard focus on a row switches the frame exactly like hovering, and the focused row keeps a clear outline.",
+    "Phone thumbnails use empty alt text because the row name already says what they show; the frame photos carry full descriptions.",
+  ],
+  useWhen: [
+    "A portfolio or case study list where each entry has one strong picture and the names should stay easy to scan.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

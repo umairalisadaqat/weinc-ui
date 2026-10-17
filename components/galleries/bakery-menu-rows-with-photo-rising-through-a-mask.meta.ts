@@ -1,0 +1,31 @@
+export default {
+  slug: "bakery-menu-rows-with-photo-rising-through-a-mask",
+  category: "galleries",
+  name: "Bakery Menu Rows With Rising Photo",
+  keyword: "image reveal on hover",
+  tags: ["image reveal", "hover list", "menu", "overflow mask", "bakery"],
+  height: 680,
+  section: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "Every row shows its small photo in place from the start and nothing slides.",
+  perf: "Two transforms and one opacity change per row, with a slow timer for the idle demo that stops off screen.",
+  intro: "A bakery counter list on warm paper where each row keeps a small window at its right edge. On hover or keyboard focus the window fades in and the loaf rises up through it from below while the name shifts a little to the right. On phones the photos simply sit in every row.",
+  customize: [
+    "Set `--w8bak-win` to make the photo window wider or narrower.",
+    "Change `DELAY` to slow down or speed up the idle reveal that cycles through the rows.",
+    "Recolour the paper and accent through `--w8bak-paper` and `--w8bak-accent`.",
+  ],
+  accessibility: [
+    "Rows are plain links with visible focus rings, and the photo opens on focus just as it does on hover.",
+    "Each picture has alt text that names what is actually on the board or tray.",
+  ],
+  useWhen: [
+    "A short menu or price list where a glimpse of the item helps people choose.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

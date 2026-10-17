@@ -1,0 +1,31 @@
+export default {
+  slug: "momentum-card-rail-with-scaling-progress-bar",
+  category: "galleries",
+  name: "Momentum Card Rail With Progress Bar",
+  keyword: "draggable card slider",
+  tags: ["carousel slider", "drag slider", "momentum", "progress bar", "card rail"],
+  height: 760,
+  section: true,
+  interactive: true,
+  collection: "carousel-slider",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Dragging still follows the pointer, but on release and on every button or key press the rail jumps straight to its slide with no glide.",
+  perf: "One transform on the track and one scaleX on the bar, written once per frame only while a drag or settle is running.",
+  intro: "A potter's studio rail of tall photo cards on warm paper. Pull it and the cards keep travelling after you let go, slow down, then ease onto the nearest card edge. A thin bar under the rail grows with scaleX as you get closer to the last piece, with a slide counter beside it. Suits a shop or maker showing a handful of pieces.",
+  customize: [
+    "Raise `FRICTION` towards 0.96 for a longer glide, or lower it to 0.88 so the rail stops sooner.",
+    "Change the card width with `--w1rai-card` and the gap with `gap` on `.w1rai-track`.",
+    "Recolour through `--w1rai-paper`, `--w1rai-ink` and `--w1rai-clay`.",
+  ],
+  accessibility: [
+    "Previous and next are real buttons that disable at each end, the arrow keys, Home and End move the rail once anything inside has focus, and tabbing to a hidden card brings it into view.",
+  ],
+  useWhen: [
+    "A craft shop or studio wants six to ten pieces in one row that people browse by dragging.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

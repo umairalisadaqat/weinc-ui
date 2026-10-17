@@ -1,0 +1,30 @@
+export default {
+  slug: "product-photo-on-soft-morphing-blob-plate",
+  category: "motion-graphics",
+  name: "Product Photo On Soft Morphing Blob Plate",
+  keyword: "morphing shapes",
+  tags: ["blob", "product card", "ecommerce", "svg gradient", "morphing"],
+  height: 680,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The photo rests on a still, two-tone clay plate, with nothing drifting behind it.",
+  perf: "Two gradient-filled paths are painted once and then only turned and scaled; nothing is blurred live.",
+  intro: "A shop product card where the photo of a ceramic vase sits on a warm plate made from two overlapping blobs. Each blob carries its own soft radial gradient, so the plate looks lit without any blur, and the pair drift against each other so its outline keeps changing. Phones stack the photo above the details.",
+  customize: [
+    "Recolour the plate by editing the `stop-color` values in the `m2plt-g1` and `m2plt-g2` gradients.",
+    "Make the drift calmer by lowering the rotate values inside `@keyframes m2plt-a` and `m2plt-b`.",
+    "Change the details list by editing the `dt` and `dd` pairs, and the button colour through `--m2plt-btn`.",
+  ],
+  accessibility: [
+    "The plate is aria-hidden decoration; the vase photo has descriptive alt text and the details sit in a real definition list.",
+  ],
+  useWhen: [
+    "A small online shop wants one hero product to feel placed on something, without staging a new photo shoot.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

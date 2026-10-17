@@ -1,0 +1,37 @@
+export default {
+  slug: "graphite-split-halves-that-close-over-the-page",
+  category: "navbars",
+  name: "Graphite Split Halves That Close Over the Page",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "split screen",
+    "menu reveal",
+    "architecture",
+    "overlay navigation",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Both halves are already closed when the menu opens, with the links and address showing, and nothing slides.",
+  perf: "Two transformed halves and a short text stagger, finished in well under a second and idle afterwards.",
+  intro: "Two graphite halves close over an architecture practice page like a pair of sliding doors, one dropping from the top and one rising from the bottom, until they meet at a seam across the middle. Large page names rise inside the upper half and the studio address appears under the seam once the doors are shut.",
+  customize: [
+    "Tone the two halves separately with `--w7spl-up` and `--w7spl-low`, or set them equal for a single dark sheet.",
+    "Shorten or lengthen the door movement with `--w7spl-speed`; the closing time is `--w7spl-out`.",
+    "Put up to five short page names in the nav list; on phones the row becomes a column.",
+  ],
+  accessibility: [
+    "When the halves close, focus lands on the first page name and Tab wraps between the links and the Close button; the page behind is inert until they part again.",
+  ],
+  useWhen: [
+    "A studio site with three to five sections wants a reveal that feels like doors closing on the page.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

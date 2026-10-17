@@ -1,0 +1,31 @@
+export default {
+  slug: "grid-tiles-light-up-under-pointer",
+  category: "cursors",
+  name: "Grid Tiles Light Up Under the Pointer",
+  keyword: "grid hover glow effect",
+  title: "",
+  description: "",
+  intro: "A lighting designer's hero drawn on a faint graphite grid. Tiles near the pointer warm up like a lamp switched on, brightest in the middle and softer at the edge, then cool down slowly once it moves away, which leaves a short glowing wake. Only each tile's opacity changes. A slow drift lights the grid before anyone arrives, and tabbing to a button lights the tiles around it.",
+  useWhen: [
+    "A dark hero for a lighting, interiors or hardware brand that needs warmth without a photo.",
+    "A product or event page where a grid already hints at plans, blueprints or schedules.",
+  ],
+  customize: [
+    "Change the tile size with `--w7til-size` and the warm colour with `--w7til-glow`.",
+    "Widen the pool of light with `REACH`, brighten it with `MAX`, and lengthen the wake by lowering `FADE`.",
+  ],
+  accessibility: [
+    "The grid is hidden from screen readers and ignores clicks; headline and buttons carry a soft dark text shadow so they stay readable over lit tiles.",
+    "Reduced motion paints one fixed pool of light in the upper right and runs no loop.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["grid glow", "hover tiles", "mouse light", "dark hero", "opacity animation"],
+  height: 560,
+  section: true,
+  collection: "cursor-effects",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "A single still patch of warm tiles glows near the top right corner.",
+  perf: "A few hundred tiles on a wide screen, but only those whose glow changed get an opacity write each frame; the loop pauses off screen.",
+} satisfies UiMeta;

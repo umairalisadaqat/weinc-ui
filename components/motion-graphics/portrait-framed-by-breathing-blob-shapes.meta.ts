@@ -1,0 +1,30 @@
+export default {
+  slug: "portrait-framed-by-breathing-blob-shapes",
+  category: "motion-graphics",
+  name: "Portrait Framed By Breathing Blob Shapes",
+  keyword: "blob animation css",
+  tags: ["blob", "portrait", "about section", "svg shapes", "morphing"],
+  height: 600,
+  section: true,
+  collection: "blob-animation-css",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The two filled blobs and the thin outline stay still around the round portrait, already composed.",
+  perf: "Three fixed SVG paths only rotate and scale, and their keyframes pause once the section leaves the screen.",
+  intro: "A round photo of a potter sits inside two clay-coloured blobs and one thin terracotta outline, each turning and swelling on its own slow cycle so the frame seems to breathe. The text column beside it stays on flat paper colour. On phones the portrait moves under the copy at a smaller size.",
+  customize: [
+    "Swap `--m2prt-fill1`, `--m2prt-fill2` and `--m2prt-line` for your own palette; keep the fills lighter than the photo so the face stays the focus.",
+    "Change the 22s, 29s and 36s durations on `.m2prt-b1` to `.m2prt-b3`; keeping them unequal is what stops the edge from looking like a spin.",
+    "Replace the photo address and adjust `object-position` on `.m2prt-img` so the face lands in the circle.",
+  ],
+  accessibility: [
+    "The blobs are one decorative SVG marked aria-hidden, while the photo keeps a real alt text and a visible caption.",
+  ],
+  useWhen: [
+    "An about or team section for a craft business wants a portrait that feels warm and handmade rather than a hard square crop.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "slider-with-draggable-scrubber-handle",
+  category: "galleries",
+  name: "Slider With Draggable Scrubber Handle",
+  keyword: "slider with scrubber",
+  tags: ["carousel slider", "scrubber", "timeline slider", "drag slider", "range handle"],
+  height: 640,
+  section: true,
+  interactive: true,
+  collection: "carousel-slider",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "Cards and handle still follow a drag one to one, then land on the nearest card at once; buttons and keys jump with no glide.",
+  perf: "Two transforms, one for the track and one for the handle, are written once per frame during a drag or settle and never at rest.",
+  intro: "A bakery's working day told in six time cards, with a pill handle on a line underneath. Drag the cards and they coast with momentum while the handle tracks along; drag the handle instead and the cards scrub through the day under it, then settle on the closest card when you let go. Fits timelines, process steps and dated histories.",
+  customize: [
+    "Change the handle size on `.w1scr-knob` and its colour with `--w1scr-accent`.",
+    "Edit the six `article` cards and the matching `.w1scr-tick` labels under the line together.",
+    "Lower `FRICTION` so a flick on the cards stops sooner, or raise `SPRING` for a quicker landing.",
+  ],
+  accessibility: [
+    "The handle is a focusable slider with its value text naming the time and step, so screen reader users hear where they are, and the arrow keys step it one card at a time.",
+  ],
+  useWhen: [
+    "A sequence with a clear order, such as hours of a day or years of a firm, reads better with a scale under it.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

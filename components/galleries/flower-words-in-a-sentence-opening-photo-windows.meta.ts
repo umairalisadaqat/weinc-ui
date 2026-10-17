@@ -1,0 +1,30 @@
+export default {
+  slug: "flower-words-in-a-sentence-opening-photo-windows",
+  category: "galleries",
+  name: "Flower Words Opening Photo Windows",
+  keyword: "hover link image preview",
+  tags: ["inline link", "image preview", "hover reveal", "editorial", "florist"],
+  height: 640,
+  section: true,
+  collection: "image-hover-effects",
+  tech: "css",
+  support: "All current browsers",
+  reducedMotion: "The small cards stay closed and the three photos sit in a captioned strip under the sentence.",
+  perf: "Each card is one opacity and transform change plus a translate on its photo; the idle timer pauses off screen.",
+  intro: "A florist's weekly stock written as one large serif sentence on deep green. The three flower names are underlined links, and resting on one, or tabbing to it, lifts a cream card above the word with that flower rising into it. Phones skip the cards and show the photos in a strip below.",
+  customize: [
+    "Set `--w8flo-pop` to make the floating card wider; its height follows the 4 by 3 frame.",
+    "Change `--w8flo-gold` to recolour the underline and focus ring together.",
+    "Edit the `stems` array in the React version to swap words and photos in one place.",
+  ],
+  accessibility: [
+    "The floating cards are hidden from screen readers since the link text names the flower; the strip shown on phones carries full alt text.",
+  ],
+  useWhen: [
+    "Editorial copy where a few nouns deserve a picture without breaking the reading line.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

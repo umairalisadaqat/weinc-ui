@@ -1,0 +1,37 @@
+export default {
+  slug: "forest-panels-that-slide-in-layer-by-layer-over-the-page",
+  category: "navbars",
+  name: "Forest Panels That Slide In Layer by Layer",
+  keyword: "fullscreen menu css",
+  tags: [
+    "fullscreen menu",
+    "sliding panels",
+    "layered wipe",
+    "navigation overlay",
+    "garden",
+  ],
+  height: 600,
+  section: true,
+  interactive: true,
+  collection: "fullscreen-menu",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The dark panel appears at once with its links in place, with no sliding.",
+  perf: "Three transformed layers and a text stagger, all CSS transitions that run only while the menu opens or closes.",
+  intro: "Three sheets of green, light to dark, sweep in from the right edge of a plant nursery page one just behind the other, so the menu arrives as a layered wipe. The deepest green carries the links, which slide sideways into place, and a column of collection days and directions sits beside them on wider screens.",
+  customize: [
+    "Swap the three greens in `--w7pnl-g1`, `--w7pnl-g2` and `--w7pnl-g3`; the last one is the menu background.",
+    "Make the layers trail further apart by raising `--w7pnl-step`.",
+    "Edit the link labels in the nav list; each `--i` value sets its place in the stagger.",
+  ],
+  accessibility: [
+    "While the panels are in, the nursery page behind is inert, Tab cycles through the button and the menu links only, and Escape hands focus back to the button.",
+  ],
+  useWhen: [
+    "A garden centre, florist or landscaper wants a menu with a sense of depth without any photograph in it.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

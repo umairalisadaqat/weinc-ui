@@ -1,0 +1,31 @@
+export default {
+  slug: "tea-list-rows-stretch-with-scroll-speed",
+  category: "scroll-effects",
+  name: "Tea List Rows Stretch With Scroll Speed",
+  keyword: "stretch on scroll effect",
+  tags: ["scroll velocity", "scaleY on scroll", "menu list", "elastic scroll"],
+  height: 620,
+  section: true,
+  collection: "scroll-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The tea list scrolls as an ordinary menu with every row at its normal height and no self-scroll.",
+  perf: "Row positions are measured once on entry and on resize, so each frame only reads the scroll offset and writes a scaleY per row.",
+  intro: "A sand coloured tea room menu whose rows stretch taller the faster the list is scrolled, as if the paper were elastic, then spring back to their normal height when the scrolling stops. Rows passing the middle of the box stretch most and those near its top and bottom edges hardly at all, which reads like a soft lens moving through the list.",
+  customize: [
+    "Change `STRETCH` for how much a row grows per pixel of speed, and keep `MAX` below about 0.25 so names stay readable.",
+    "Adjust the `0.75` in the falloff line to widen or narrow the band of rows that stretch around the middle.",
+    "Recolour through `--w3stl-bg`, `--w3stl-ink` and `--w3stl-accent`; `IDLE` sets how far the demo swings, 0 removes it.",
+  ],
+  accessibility: [
+    "The menu is an ordered list of plain text, so it reads in order with names, origins and prices together.",
+    "The scroll box can be focused and scrolled from the keyboard, with a brown outline when focused.",
+  ],
+  useWhen: [
+    "A cafe, bar or shop list with a dozen or so items that should feel tactile without any decoration added.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;

@@ -1,0 +1,30 @@
+export default {
+  slug: "terminal-command-css-typewriter-with-output-lines",
+  category: "text-effects",
+  name: "Terminal Command Typewriter",
+  keyword: "terminal typing animation css",
+  title: "",
+  description: "",
+  intro: "A graphite terminal window where a deploy command types itself after the prompt and four lines of output land one by one, ending on a green tick. It is all CSS: a steps() width animation for the command and a separate keyframe per output line, looping every nine seconds. Good for a developer tool page or a changelog header.",
+  useWhen: [
+    "A product page needs to show what running your tool looks like without a video or a screen recording.",
+    "You want the terminal to stay crisp and selectable text rather than an image.",
+  ],
+  customize: [
+    "Edit the command, then set --ttw-n and the steps(28) inside ttw-type to its length.",
+    "Move the 28%, 36%, 46% and 56.5% stops in ttw-o1 to ttw-o4 to change when each output line appears.",
+    "Lengthen --ttw-cycle if you add lines, so the finished output has time to be read before the loop restarts.",
+  ],
+  accessibility: [
+    "The window is aria-hidden and a hidden paragraph reads the command and all its output in one pass.",
+    "The animated version still keeps output lines in the layout while invisible, so nothing below the window jumps as they appear.",
+  ],
+  faqs: [],
+  related: [],
+  tags: ["terminal animation", "typing animation css", "command line", "developer"],
+  height: 470,
+  collection: "typing-animation-css",
+  tech: "css",
+  reducedMotion: "The full command and all four output lines are shown at once, with a steady caret.",
+  perf: "Six looping CSS animations on text (one width, five opacity) and no script beyond an optional off-screen pause.",
+} satisfies UiMeta;

@@ -1,0 +1,31 @@
+export default {
+  slug: "photo-grid-leans-with-scroll-speed",
+  category: "scroll-effects",
+  name: "Photo Grid Leans With Scroll Speed",
+  keyword: "scroll velocity skew",
+  tags: ["scroll velocity skew", "photo grid", "skewY on scroll", "gallery scroll effect"],
+  height: 640,
+  section: true,
+  collection: "scroll-animation",
+  tech: "script",
+  support: "All current browsers",
+  reducedMotion: "The grid scrolls as a plain, upright set of photographs with no lean and no self-scrolling demo.",
+  perf: "One frame loop runs only while the box is moving or settling, writing a skew to three columns; it stops when flat or off screen.",
+  intro: "A three column print shop gallery on cool white where the columns tilt in proportion to how fast the box is scrolled, each by a slightly different amount, then ease back upright as soon as the scrolling stops. A slow flick barely moves them; a fast one gives a lean of a few degrees. Until someone touches it, the box drifts up and down by itself so the lean is visible.",
+  customize: [
+    "Raise `LEAN` for more tilt per pixel of speed, and cap it with `MAX` so captions stay legible.",
+    "Set `MIX` to change how much each column leans relative to the others; equal values make the grid tilt as one sheet.",
+    "Set `IDLE` to 0 to remove the self-scroll demo, or change `--w3lgr-h` for a taller box.",
+  ],
+  accessibility: [
+    "The scroll box is focusable with a visible outline so arrow keys and Page Down scroll it, and any key, wheel or touch ends the demo.",
+    "Each photo has alt text that describes what it shows, and captions are real text.",
+  ],
+  useWhen: [
+    "A portfolio, print shop or travel page with a long grid of images that needs a sense of weight while scrolling.",
+  ],
+  faqs: [],
+  related: [],
+  title: "",
+  description: "",
+} satisfies UiMeta;
